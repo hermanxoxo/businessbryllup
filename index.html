@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>bryllupsyudi — Bryllupsnettsider som forteller deres historie</title>
+  <meta name="description" content="Informative, vakre bryllupsnettsider med RSVP, program og alt gjestene trenger. Fast pris, levert på én uke.">
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="bryllupsyudi — Bryllupsnettsider som forteller deres historie">
+  <meta property="og:description" content="Informative, vakre bryllupsnettsider med RSVP, program og alt gjestene trenger.">
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://hermanxoxo.github.io/businessbryllup/">
+  <!-- TODO: legg til og:image når hero-bilde er klart -->
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://hermanxoxo.github.io/businessbryllup/">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="no" href="https://hermanxoxo.github.io/businessbryllup/">
+  <link rel="alternate" hreflang="en" href="https://hermanxoxo.github.io/businessbryllup/en/">
+
+  <!-- Fonter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- Structured data — LocalBusiness (TODO: oppdater med ekte domene og data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "bryllupsyudi",
+    "description": "Bryllupsnettsider for norske brudepar — informativ, vakker og enkel å bruke.",
+    "provider": {
+      "@type": "Person",
+      "name": "Herman Haukenes",
+      "email": "kontakt@bryllupsstudio.no"
+    },
+    "areaServed": "NO",
+    "url": "https://hermanxoxo.github.io/businessbryllup/"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Hovedmeny">
+      <a href="/" class="nav__logo" aria-label="bryllupsyudi — tilbake til toppen">
+        <span class="nav__logo-text">bryllupsyudi</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle"
+              aria-expanded="false" aria-controls="navMenu"
+              aria-label="Åpne navigasjonsmeny">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#maler"   class="nav__link">Maler</a></li>
+        <li><a href="#pakker"  class="nav__link">Pakker</a></li>
+        <li><a href="#prosess" class="nav__link">Prosess</a></li>
+        <li><a href="#om"      class="nav__link">Om Herman</a></li>
+        <li><a href="#kontakt" class="nav__link nav__link--cta">Kom i gang</a></li>
+      </ul>
+
+      <div class="lang-switch" aria-label="Språkvalg">
+        <a href="/"    class="lang-switch__btn lang-switch__btn--active"
+           lang="no" aria-current="true" data-lang="no">NO</a>
+        <span aria-hidden="true">/</span>
+        <a href="/en/" class="lang-switch__btn" lang="en" data-lang="en">EN</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================
+         1. HERO
+         ===================================================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+
+      <!--
+        PLACEHOLDER — bytt ut <div class="hero__placeholder"> med ekte bilde:
+
+        <img class="hero__bg"
+             src="assets/images/hero.webp"
+             alt="Bryllupspar på en sommerdag"
+             width="1920" height="1080"
+             fetchpriority="high">
+        <div class="hero__overlay" aria-hidden="true"></div>
+
+        Og juster hero__title, hero__subtitle, hero__eyebrow til hvit tekst
+        ved å legge .hero--dark-bg på <section>.
+      -->
+      <div class="hero__placeholder" aria-hidden="true"></div>
+
+      <div class="hero__content">
+
+        <p class="hero__eyebrow" data-animate data-delay="0">
+          Bryllupsnettsider for norske brudepar
+        </p>
+
+        <!--
+          Alternativer til overskrift — velg én:
+          1. "Bryllupsnettsider som forteller deres historie"  ← valgt
+          2. "Alt gjestene trenger å vite — ett vakkert sted"
+          3. "En nettside til bryllupet, laget med kjærlighet"
+        -->
+        <h1 class="hero__title" id="hero-heading" data-animate data-delay="1">
+          Bryllupsnettsider som<br>
+          <em>forteller deres historie</em>
+        </h1>
+
+        <p class="hero__subtitle" data-animate data-delay="2">
+          Informative, vakre nettsider med RSVP, program og alt gjestene trenger
+          — levert ferdig på én uke, til en fast pris.
+        </p>
+
+        <div class="hero__ctas" data-animate data-delay="3">
+          <a href="#pakker" class="btn btn--primary">Se pakker</a>
+          <a href="#maler"  class="btn btn--outline">Se referanser</a>
+        </div>
+
+        <!--
+          Vises automatisk når CONFIG.BOOKING_URL er satt:
+          <a href="#" class="btn btn--outline" data-booking-btn style="display:none">
+            Book en prat
+          </a>
+        -->
+
+      </div>
+
+      <a href="#hvorfor" class="hero__scroll" aria-label="Scroll til neste seksjon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"
+                stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+
+    <!-- =====================================================
+         2. HVORFOR EN BRYLLUPSNETTSIDE?
+         ===================================================== -->
+    <section class="why section" id="hvorfor" aria-labelledby="why-heading">
+      <div class="container">
+        <p class="section__label" data-animate>Fordeler</p>
+        <h2 class="section__title" id="why-heading" data-animate data-delay="1">
+          Hvorfor en bryllupsnettside?
+        </h2>
+        <p class="section__subtitle" data-animate data-delay="2">
+          <!-- TODO: brødtekst og punkt-liste -->
+        </p>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         3. REFERANSEMALER
+         ===================================================== -->
+    <section class="demos section" id="maler" aria-labelledby="demos-heading">
+      <div class="container">
+        <p class="section__label" data-animate>Design</p>
+        <h2 class="section__title" id="demos-heading" data-animate data-delay="1">
+          Velg din stil
+        </h2>
+        <!-- TODO: tre demo-kort -->
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         4. PAKKER OG PRISER
+         ===================================================== -->
+    <section class="pricing section" id="pakker" aria-labelledby="pricing-heading">
+      <div class="container">
+        <p class="section__label" data-animate>Priser</p>
+        <h2 class="section__title" id="pricing-heading" data-animate data-delay="1">
+          Finn riktig pakke
+        </h2>
+        <!-- TODO: fire pakke-kort -->
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         5. PROSESS
+         ===================================================== -->
+    <section class="process section" id="prosess" aria-labelledby="process-heading">
+      <div class="container">
+        <p class="section__label" data-animate>Slik jobber vi</p>
+        <h2 class="section__title" id="process-heading" data-animate data-delay="1">
+          Fra prat til publisert side
+        </h2>
+        <!-- TODO: 5 prosess-steg -->
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         6. OM HERMAN
+         ===================================================== -->
+    <section class="about section" id="om" aria-labelledby="about-heading">
+      <div class="container">
+        <p class="section__label" data-animate>Om meg</p>
+        <h2 class="section__title" id="about-heading" data-animate data-delay="1">
+          Herman Haukenes
+        </h2>
+        <!-- TODO: tekst + bilde -->
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         7. FAQ
+         ===================================================== -->
+    <section class="faq section" id="faq" aria-labelledby="faq-heading">
+      <div class="container--narrow">
+        <p class="section__label" data-animate>Spørsmål og svar</p>
+        <h2 class="section__title" id="faq-heading" data-animate data-delay="1">
+          Ofte stilte spørsmål
+        </h2>
+        <!-- TODO: 8 FAQ-items -->
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         8. KONTAKT
+         ===================================================== -->
+    <section class="contact section" id="kontakt" aria-labelledby="contact-heading">
+      <div class="container--narrow">
+        <p class="section__label" data-animate>Ta kontakt</p>
+        <h2 class="section__title" id="contact-heading" data-animate data-delay="1">
+          La oss snakke om bryllupet
+        </h2>
+        <!-- TODO: kontaktskjema -->
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <p class="footer__brand">bryllupsyudi</p>
+      <!-- TODO: lenker (personvern, vilkår), kontaktinfo -->
+      <p class="footer__note">
+        Bygget med <a href="https://claude.ai/code" rel="noopener">Claude Code</a>
+        &nbsp;·&nbsp; Hostet på GitHub Pages
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

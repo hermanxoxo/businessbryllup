@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/herma/Desktop/ClaudeCode1/**)",
+      "Read(//c/Users/herma/Desktop/**)",
+      "Bash(dir \"C:\\\\Users\\\\herma\\\\Desktop\\\\ClaudeCode1\\\\businessbryllup\")",
+      "Bash(git init *)",
+      "Bash(mkdir -p assets/css assets/js assets/images assets/fonts en demos/klassisk demos/minimal demos/botanisk .github/workflows)",
+      "Bash(git add *)"
+    ]
+  }
+}
