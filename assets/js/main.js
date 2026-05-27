@@ -76,3 +76,39 @@ document.querySelectorAll('[data-lang]').forEach(btn => {
     btn.style.display = '';
   });
 })();
+
+// KONTAKTSKJEMA
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn      = document.getElementById('submitBtn');
+    const success  = document.getElementById('formSuccess');
+    const error    = document.getElementById('formError');
+    const data     = Object.fromEntries(new FormData(contactForm));
+
+    btn.disabled   = true;
+    btn.textContent = 'Sender…';
+    success.style.display = 'none';
+    error.style.display   = 'none';
+
+    try {
+      if (typeof CONFIG !== 'undefined' && CONFIG.SHEETS_WEBHOOK_URL) {
+        const res = await fetch(CONFIG.SHEETS_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...data, timestamp: new Date().toISOString() }),
+        });
+        if (!res.ok) throw new Error('Network response was not ok');
+      }
+      // Vis suksessmelding uansett (webhook ikke satt opp ennå er ok i dev)
+      success.style.display = 'block';
+      contactForm.reset();
+    } catch {
+      error.style.display = 'block';
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Send melding';
+    }
+  });
+}

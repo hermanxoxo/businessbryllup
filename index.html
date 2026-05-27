@@ -7,39 +7,28 @@
   <title>bryllupsyudi — Bryllupsnettsider som forteller deres historie</title>
   <meta name="description" content="Informative, vakre bryllupsnettsider med RSVP, program og alt gjestene trenger. Fast pris, levert på én uke.">
 
-  <!-- Open Graph -->
   <meta property="og:title"       content="bryllupsyudi — Bryllupsnettsider som forteller deres historie">
   <meta property="og:description" content="Informative, vakre bryllupsnettsider med RSVP, program og alt gjestene trenger.">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://hermanxoxo.github.io/businessbryllup/">
-  <!-- TODO: legg til og:image når hero-bilde er klart -->
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://hermanxoxo.github.io/businessbryllup/">
+  <link rel="canonical"  href="https://hermanxoxo.github.io/businessbryllup/">
+  <link rel="alternate"  hreflang="no" href="https://hermanxoxo.github.io/businessbryllup/">
+  <link rel="alternate"  hreflang="en" href="https://hermanxoxo.github.io/businessbryllup/en/">
 
-  <!-- Hreflang -->
-  <link rel="alternate" hreflang="no" href="https://hermanxoxo.github.io/businessbryllup/">
-  <link rel="alternate" hreflang="en" href="https://hermanxoxo.github.io/businessbryllup/en/">
-
-  <!-- Fonter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/main.css">
 
-  <!-- Structured data — LocalBusiness (TODO: oppdater med ekte domene og data) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "bryllupsyudi",
     "description": "Bryllupsnettsider for norske brudepar — informativ, vakker og enkel å bruke.",
-    "provider": {
-      "@type": "Person",
-      "name": "Herman Haukenes",
-      "email": "kontakt@bryllupsstudio.no"
-    },
+    "provider": { "@type": "Person", "name": "Herman Haukenes", "email": "kontakt@bryllupsstudio.no" },
     "areaServed": "NO",
     "url": "https://hermanxoxo.github.io/businessbryllup/"
   }
@@ -70,8 +59,7 @@
       </ul>
 
       <div class="lang-switch" aria-label="Språkvalg">
-        <a href="/"    class="lang-switch__btn lang-switch__btn--active"
-           lang="no" aria-current="true" data-lang="no">NO</a>
+        <a href="/"    class="lang-switch__btn lang-switch__btn--active" lang="no" aria-current="true"  data-lang="no">NO</a>
         <span aria-hidden="true">/</span>
         <a href="/en/" class="lang-switch__btn" lang="en" data-lang="en">EN</a>
       </div>
@@ -80,38 +68,25 @@
 
   <main id="main-content">
 
-    <!-- =====================================================
+    <!-- ====================================================
          1. HERO
-         ===================================================== -->
+         ==================================================== -->
     <section class="hero" id="hero" aria-labelledby="hero-heading">
-
       <!--
-        PLACEHOLDER — bytt ut <div class="hero__placeholder"> med ekte bilde:
-
-        <img class="hero__bg"
-             src="assets/images/hero.webp"
-             alt="Bryllupspar på en sommerdag"
-             width="1920" height="1080"
-             fetchpriority="high">
+        PLACEHOLDER — bytt ut med ekte bilde når det er klart:
+        <img class="hero__bg" src="assets/images/hero.webp"
+             alt="Bryllupspar på en sommerdag" width="1920" height="1080" fetchpriority="high">
         <div class="hero__overlay" aria-hidden="true"></div>
-
-        Og juster hero__title, hero__subtitle, hero__eyebrow til hvit tekst
-        ved å legge .hero--dark-bg på <section>.
+        Legg også til klassen .hero--photo på <section> og juster tekstfarger til hvit.
       -->
       <div class="hero__placeholder" aria-hidden="true"></div>
 
       <div class="hero__content">
+        <p class="hero__eyebrow" data-animate data-delay="0">Bryllupsnettsider for norske brudepar</p>
 
-        <p class="hero__eyebrow" data-animate data-delay="0">
-          Bryllupsnettsider for norske brudepar
-        </p>
-
-        <!--
-          Alternativer til overskrift — velg én:
-          1. "Bryllupsnettsider som forteller deres historie"  ← valgt
-          2. "Alt gjestene trenger å vite — ett vakkert sted"
-          3. "En nettside til bryllupet, laget med kjærlighet"
-        -->
+        <!-- Alternativer:
+             2. "Alt gjestene trenger å vite — ett vakkert sted"
+             3. "En nettside til bryllupet, laget med kjærlighet" -->
         <h1 class="hero__title" id="hero-heading" data-animate data-delay="1">
           Bryllupsnettsider som<br>
           <em>forteller deres historie</em>
@@ -126,122 +101,486 @@
           <a href="#pakker" class="btn btn--primary">Se pakker</a>
           <a href="#maler"  class="btn btn--outline">Se referanser</a>
         </div>
-
-        <!--
-          Vises automatisk når CONFIG.BOOKING_URL er satt:
-          <a href="#" class="btn btn--outline" data-booking-btn style="display:none">
-            Book en prat
-          </a>
-        -->
-
       </div>
 
       <a href="#hvorfor" class="hero__scroll" aria-label="Scroll til neste seksjon">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M12 5v14M5 12l7 7 7-7"
-                stroke="currentColor" stroke-width="1.5"
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </a>
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          2. HVORFOR EN BRYLLUPSNETTSIDE?
-         ===================================================== -->
+         ==================================================== -->
     <section class="why section" id="hvorfor" aria-labelledby="why-heading">
       <div class="container">
-        <p class="section__label" data-animate>Fordeler</p>
-        <h2 class="section__title" id="why-heading" data-animate data-delay="1">
-          Hvorfor en bryllupsnettside?
-        </h2>
-        <p class="section__subtitle" data-animate data-delay="2">
-          <!-- TODO: brødtekst og punkt-liste -->
+        <div class="why__header">
+          <p class="section__label" data-animate>Fordeler</p>
+          <h2 class="section__title" id="why-heading" data-animate data-delay="1">
+            Hvorfor en bryllupsnettside?
+          </h2>
+          <p class="section__subtitle" data-animate data-delay="2">
+            Gjestene har mange spørsmål. En bryllupsnettside svarer på dem alle — uten at dere trenger å svare på én eneste SMS.
+          </p>
+        </div>
+
+        <div class="why__grid">
+          <div class="why__card" data-animate>
+            <div class="why__card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Alt gjestene trenger, ett sted</h3>
+            <p class="why__card-text">Program, dress code, overnatting, transport og gaveønsker — samlet på én vakker side. Ingen mailer, ingen forvirring.</p>
+          </div>
+
+          <div class="why__card" data-animate data-delay="1">
+            <div class="why__card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">RSVP rett i Google Sheets</h3>
+            <p class="why__card-text">Påmeldinger, allergier og matpreferanser havner direkte i et regneark dere eier. Ingen manuell håndtering, ingen dobbeltarbeid.</p>
+          </div>
+
+          <div class="why__card" data-animate data-delay="2">
+            <div class="why__card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Alltid oppdatert</h3>
+            <p class="why__card-text">Noe endres i planleggingen? Oppdateringer tar minutter. Gjestene ser alltid siste versjon — ingen utdaterte PDF-invitasjoner i omløp.</p>
+          </div>
+
+          <div class="why__card" data-animate data-delay="3">
+            <div class="why__card-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M4.318 6.318a4.5 4.5 0 0 0 0 6.364L12 20.364l7.682-7.682a4.5 4.5 0 0 0-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 0 0-6.364 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="why__card-title">Et digitalt minne</h3>
+            <p class="why__card-text">Siden lever videre etter bryllupsdagen. Et vakkert minne dere og gjestene kan se tilbake på, for alltid.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================
+         3. REFERANSEMALER
+         ==================================================== -->
+    <section class="demos section" id="maler" aria-labelledby="demos-heading">
+      <div class="container">
+        <div class="demos__header">
+          <p class="section__label" data-animate>Design</p>
+          <h2 class="section__title" id="demos-heading" data-animate data-delay="1">Velg din stil</h2>
+          <p class="section__subtitle" data-animate data-delay="2">
+            Tre tydelig forskjellige maler å velge mellom. Dere får tilpassede farger, bilder og tekst — malen er utgangspunktet, ikke sluttproduktet.
+          </p>
+        </div>
+
+        <div class="demos__grid">
+
+          <article class="demo-card demo-card--klassisk" data-animate>
+            <div class="demo-card__preview" role="img" aria-label="Forhåndsvisning: Klassisk Eleganse"></div>
+            <div class="demo-card__body">
+              <p class="demo-card__tag">Mal 1</p>
+              <h3 class="demo-card__title">Klassisk Eleganse</h3>
+              <p class="demo-card__desc">Tidløst og formelt. Serif-typografi, varme gull-aksenter og en sentrert, symmetrisk layout som aldri går ut på dato.</p>
+              <p class="demo-card__fits">Passer til: kirkebryllup, formelle selskaper, slott og herregårder</p>
+              <a href="demos/klassisk/" class="demo-card__cta" target="_blank" rel="noopener">
+                Se demo
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="demo-card demo-card--minimal" data-animate data-delay="1">
+            <div class="demo-card__preview" role="img" aria-label="Forhåndsvisning: Moderne Minimal"></div>
+            <div class="demo-card__body">
+              <p class="demo-card__tag">Mal 2</p>
+              <h3 class="demo-card__title">Moderne Minimal</h3>
+              <p class="demo-card__desc">Luftig og stilren. Store typografiske grep, rikelig med whitespace og jordtoner som taler for seg selv.</p>
+              <p class="demo-card__fits">Passer til: moderne par, urbane bryllup, industrielle lokaler</p>
+              <a href="demos/minimal/" class="demo-card__cta" target="_blank" rel="noopener">
+                Se demo
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="demo-card demo-card--botanisk" data-animate data-delay="2">
+            <div class="demo-card__preview" role="img" aria-label="Forhåndsvisning: Botanisk Romantikk"></div>
+            <div class="demo-card__body">
+              <p class="demo-card__tag">Mal 3</p>
+              <h3 class="demo-card__title">Botanisk Romantikk</h3>
+              <p class="demo-card__desc">Varm og organisk. Botaniske detaljer, myke rosetoner og en uformell eleganse som føles som en sommerdag utendørs.</p>
+              <p class="demo-card__fits">Passer til: hagebryllup, sommerfester, landlige omgivelser</p>
+              <a href="demos/botanisk/" class="demo-card__cta" target="_blank" rel="noopener">
+                Se demo
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================
+         4. PAKKER OG PRISER
+         ==================================================== -->
+    <section class="pricing section" id="pakker" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="pricing__header">
+          <p class="section__label" data-animate>Priser</p>
+          <h2 class="section__title" id="pricing-heading" data-animate data-delay="1">Finn riktig pakke</h2>
+          <p class="section__subtitle" data-animate data-delay="2">
+            Fast pris, ingen overraskelser. Alle pakker inkluderer hosting på GitHub Pages og eget repo som dere beholder.
+          </p>
+        </div>
+
+        <div class="pricing__grid">
+
+          <!-- Enkel -->
+          <div class="price-card" data-animate>
+            <h3 class="price-card__name">Enkel</h3>
+            <div class="price-card__price">
+              <span class="price-card__amount">4 000</span>
+              <span class="price-card__currency">kr</span>
+            </div>
+            <hr class="price-card__divider">
+            <ul class="price-card__features">
+              <li>Velg én av tre maler</li>
+              <li>Tilpassede farger, bilder og tekst</li>
+              <li>Hostet på GitHub Pages</li>
+              <li>Oppsett av eget domene (dere kjøper domenet)</li>
+              <li>1 revisjonsrunde</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--outline">Kom i gang</a>
+          </div>
+
+          <!-- Komplett — featured -->
+          <div class="price-card price-card--featured" data-animate data-delay="1">
+            <div class="price-card__badge">Mest populær</div>
+            <h3 class="price-card__name">Komplett</h3>
+            <div class="price-card__price">
+              <span class="price-card__amount">5 500</span>
+              <span class="price-card__currency">kr</span>
+            </div>
+            <hr class="price-card__divider">
+            <ul class="price-card__features">
+              <li>Alt i Enkel</li>
+              <li>RSVP direkte til Google Sheets</li>
+              <li>Allergier og matpreferanser</li>
+              <li>Gjestebok</li>
+              <li>2 revisjonsrunder</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--outline">Kom i gang</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="price-card" data-animate data-delay="2">
+            <h3 class="price-card__name">Premium</h3>
+            <div class="price-card__price">
+              <span class="price-card__amount">8 500</span>
+              <span class="price-card__currency">kr</span>
+            </div>
+            <hr class="price-card__divider">
+            <ul class="price-card__features">
+              <li>Alt i Komplett</li>
+              <li>Tilpasset design (ikke kun mal)</li>
+              <li>1 video-konsultasjon (60 min)</li>
+              <li>Allergi- og kostpreferanse-felt</li>
+              <li>3 revisjonsrunder</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--outline">Kom i gang</a>
+          </div>
+
+          <!-- Signatur -->
+          <div class="price-card" data-animate data-delay="3">
+            <h3 class="price-card__name">Signatur</h3>
+            <div class="price-card__price">
+              <span class="price-card__amount">12 500</span>
+              <span class="price-card__currency">kr</span>
+            </div>
+            <hr class="price-card__divider">
+            <ul class="price-card__features">
+              <li>Alt i Premium</li>
+              <li>3 video-sessions</li>
+              <li>Flerspråklig side (NO/EN)</li>
+              <li>Ubegrensede mindre endringer frem til bryllupet</li>
+              <li>Prioritert support</li>
+            </ul>
+            <a href="#kontakt" class="btn btn--outline">Kom i gang</a>
+          </div>
+
+        </div>
+
+        <p class="pricing__note" data-animate>
+          Alle priser eks. mva. Domene og eventuelle premium-skrifter kommer i tillegg.
         </p>
       </div>
     </section>
 
 
-    <!-- =====================================================
-         3. REFERANSEMALER
-         ===================================================== -->
-    <section class="demos section" id="maler" aria-labelledby="demos-heading">
-      <div class="container">
-        <p class="section__label" data-animate>Design</p>
-        <h2 class="section__title" id="demos-heading" data-animate data-delay="1">
-          Velg din stil
-        </h2>
-        <!-- TODO: tre demo-kort -->
-      </div>
-    </section>
-
-
-    <!-- =====================================================
-         4. PAKKER OG PRISER
-         ===================================================== -->
-    <section class="pricing section" id="pakker" aria-labelledby="pricing-heading">
-      <div class="container">
-        <p class="section__label" data-animate>Priser</p>
-        <h2 class="section__title" id="pricing-heading" data-animate data-delay="1">
-          Finn riktig pakke
-        </h2>
-        <!-- TODO: fire pakke-kort -->
-      </div>
-    </section>
-
-
-    <!-- =====================================================
+    <!-- ====================================================
          5. PROSESS
-         ===================================================== -->
+         ==================================================== -->
     <section class="process section" id="prosess" aria-labelledby="process-heading">
       <div class="container">
-        <p class="section__label" data-animate>Slik jobber vi</p>
-        <h2 class="section__title" id="process-heading" data-animate data-delay="1">
-          Fra prat til publisert side
-        </h2>
-        <!-- TODO: 5 prosess-steg -->
+        <div class="process__header">
+          <p class="section__label" data-animate>Slik jobber vi</p>
+          <h2 class="section__title" id="process-heading" data-animate data-delay="1">Fra prat til publisert side</h2>
+          <p class="section__subtitle" data-animate data-delay="2">
+            Fem steg fra første samtale til gjestene kan melde seg på.
+          </p>
+        </div>
+
+        <ol class="process__steps">
+          <li class="process__step" data-animate>
+            <div class="process__step-num" aria-hidden="true">1</div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Uforpliktende prat</h3>
+              <p class="process__step-text">Vi tar en kort samtale — på telefon, video eller chat. Jeg finner ut hva dere trenger og gir et fast tilbud uten overraskelser.</p>
+              <span class="process__step-note">Ca. 15 minutter</span>
+            </div>
+          </li>
+
+          <li class="process__step" data-animate data-delay="1">
+            <div class="process__step-num" aria-hidden="true">2</div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Velg pakke og mal</h3>
+              <p class="process__step-text">Dere velger pakke og hvilken av de tre malene dere vil ta utgangspunkt i. Jeg sender tilbud og enkel kontrakt.</p>
+            </div>
+          </li>
+
+          <li class="process__step" data-animate data-delay="2">
+            <div class="process__step-num" aria-hidden="true">3</div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Dere fyller inn innholdet</h3>
+              <p class="process__step-text">Jeg sender et enkelt skjema. Dere legger inn tekst, bilder, program og praktisk info i sitt eget tempo — ingen tekniske ferdigheter nødvendig.</p>
+            </div>
+          </li>
+
+          <li class="process__step" data-animate data-delay="3">
+            <div class="process__step-num" aria-hidden="true">4</div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Jeg bygger siden</h3>
+              <p class="process__step-text">Med moderne verktøy — inkludert AI-assistenten Claude Code — leverer jeg en ferdig side raskt og uten å gå på kompromiss med kvalitet. Jeg er åpen om dette fordi jeg mener det gir dere et bedre produkt.</p>
+            </div>
+          </li>
+
+          <li class="process__step" data-animate data-delay="4">
+            <div class="process__step-num" aria-hidden="true">5</div>
+            <div class="process__step-body">
+              <h3 class="process__step-title">Lansering</h3>
+              <p class="process__step-text">Dere får tilgang til et eget GitHub-repo og en live side. Gjestene kan begynne å melde seg på — og dere slipper å svare på spørsmål om parkering.</p>
+              <span class="process__step-note">Typisk 5–7 virkedager fra signert kontrakt</span>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          6. OM HERMAN
-         ===================================================== -->
+         ==================================================== -->
     <section class="about section" id="om" aria-labelledby="about-heading">
       <div class="container">
-        <p class="section__label" data-animate>Om meg</p>
-        <h2 class="section__title" id="about-heading" data-animate data-delay="1">
-          Herman Haukenes
-        </h2>
-        <!-- TODO: tekst + bilde -->
+        <div class="about__inner">
+
+          <div class="about__img-wrap">
+            <!--
+              PLACEHOLDER — bytt ut med ekte bilde:
+              <img class="about__img" src="assets/images/herman.webp"
+                   alt="Herman Haukenes" width="680" height="900">
+            -->
+            <div class="about__img-placeholder" aria-label="Bildeplass — foto av Herman Haukenes">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Foto av Herman<br>kommer her</span>
+            </div>
+          </div>
+
+          <div class="about__text" data-animate>
+            <p class="section__label">Om meg</p>
+            <h2 class="section__title" id="about-heading" style="text-align:left; margin-bottom:0">Herman Haukenes</h2>
+
+            <p>Jeg er selv forlovet — og kjenner på kroppen hvordan det er å planlegge bryllup. Gjestene har spørsmål, logistikken er kompleks, og man vil at alt skal være vakkert.</p>
+
+            <p>Til daglig jobber jeg som konsulent og prosjektleder i IT-bransjen, med erfaring fra både AI og utvikling. Jeg kombinerer teknisk kompetanse med en forståelse for at dette ikke bare er et teknisk prosjekt — det er én av de viktigste dagene i livet deres.</p>
+
+            <p>Resultatet er nettsider som er enkle for gjestene å bruke, enkle for dere å oppdatere, og vakre nok til å stå seg over tid.</p>
+
+            <blockquote class="about__quote">
+              "Jeg bruker moderne verktøy — inkludert AI-assistenten Claude Code — for å levere kvalitet raskere og rimeligere enn tradisjonell webutvikling. Det er jeg åpen om, fordi jeg mener det gir dere et bedre produkt."
+            </blockquote>
+
+            <div>
+              <a href="#kontakt" class="btn btn--primary">Ta kontakt</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          7. FAQ
-         ===================================================== -->
+         ==================================================== -->
     <section class="faq section" id="faq" aria-labelledby="faq-heading">
       <div class="container--narrow">
-        <p class="section__label" data-animate>Spørsmål og svar</p>
-        <h2 class="section__title" id="faq-heading" data-animate data-delay="1">
-          Ofte stilte spørsmål
-        </h2>
-        <!-- TODO: 8 FAQ-items -->
+        <div class="faq__header">
+          <p class="section__label" data-animate>Spørsmål og svar</p>
+          <h2 class="section__title" id="faq-heading" data-animate data-delay="1">Ofte stilte spørsmål</h2>
+        </div>
+
+        <div class="faq__list" data-animate data-delay="2">
+
+          <details class="faq__item">
+            <summary>Hva om vi vil endre noe etter lansering?</summary>
+            <div class="faq__answer">
+              Endringer innenfor pakken er inkludert gjennom avtalte revisjonsrunder. Etter lansering tar vi enkle endringer (tekst, bilder, program) til 500 kr/time. Større strukturelle endringer prises separat.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Eier vi siden selv?</summary>
+            <div class="faq__answer">
+              Ja — dere får tilgang til et eget GitHub-repo som tilhører dere. Dere kan ta med deg siden videre, gi tilgang til andre utviklere, eller bare la den ligge som den er.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Hvor lenge er siden tilgjengelig?</summary>
+            <div class="faq__answer">
+              Så lenge dere vil. GitHub Pages er gratis og siden er live til dere aktivt sletter repoet. Det er ingen abonnementsavgift fra min side.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Hva med personvern og GDPR for RSVP-data?</summary>
+            <div class="faq__answer">
+              RSVP-data (navn, e-post, allergier) lagres i et Google Sheets som dere eier. Ingen tredjepart har tilgang. Vi inkluderer en enkel personvernerklæring på siden, og anbefaler at dere sletter dataene etter bryllupet.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Hva hvis vi ikke har bilder ennå?</summary>
+            <div class="faq__answer">
+              Ingen problem. Vi bruker vakre royalty-free plassholderbilder til å starte, og bytter inn egne bilder når dere har dem — enten fra forlovelsesfotos, bryllupsfotografen, eller begge deler.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Kan vi bytte mal underveis?</summary>
+            <div class="faq__answer">
+              Inntil innholdet er lagt inn — ja, uten ekstra kostnad. Etter at siden er ferdig regnes et mal-bytte som en ny jobb og prises deretter.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Hvor lang tid tar det?</summary>
+            <div class="faq__answer">
+              Fra signert kontrakt til lansert side tar det typisk 5–7 virkedager, forutsatt at dere leverer innholdet raskt. Det største usikkerhetsmomentet er alltid ventetid på tekst og bilder fra brudepar — jo raskere dere leverer, jo raskere er siden klar.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Hva hvis vi vil ha noe som ikke er i pakkene?</summary>
+            <div class="faq__answer">
+              Ta kontakt og fortell hva dere trenger. Signatur-pakken er åpen for tilpasninger, og enklere tillegg kan legges til nesten hvilken som helst pakke mot et tillegg. Jeg er fleksibel — ingen bryllup er like.
+            </div>
+          </details>
+
+        </div>
       </div>
     </section>
 
 
-    <!-- =====================================================
+    <!-- ====================================================
          8. KONTAKT
-         ===================================================== -->
+         ==================================================== -->
     <section class="contact section" id="kontakt" aria-labelledby="contact-heading">
       <div class="container--narrow">
-        <p class="section__label" data-animate>Ta kontakt</p>
-        <h2 class="section__title" id="contact-heading" data-animate data-delay="1">
-          La oss snakke om bryllupet
-        </h2>
-        <!-- TODO: kontaktskjema -->
+        <div class="contact__header">
+          <p class="section__label" data-animate>Ta kontakt</p>
+          <h2 class="section__title" id="contact-heading" data-animate data-delay="1">
+            La oss snakke om bryllupet
+          </h2>
+          <p class="contact__subtitle" data-animate data-delay="2">
+            Fyll ut skjemaet under, så tar jeg kontakt innen én arbeidsdag. Ingen forpliktelse.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate data-animate data-delay="3">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="navn">Navn</label>
+              <input type="text" id="navn" name="navn" autocomplete="name"
+                     placeholder="Ola og Kari Nordmann" required>
+            </div>
+            <div class="form-group">
+              <label for="epost">E-post</label>
+              <input type="email" id="epost" name="epost" autocomplete="email"
+                     placeholder="dere@eksempel.no" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dato">Omtrentlig bryllupsdato</label>
+              <input type="text" id="dato" name="dato"
+                     placeholder="f.eks. august 2026">
+            </div>
+            <div class="form-group">
+              <label for="pakke">Pakke av interesse</label>
+              <select id="pakke" name="pakke">
+                <option value="">Vet ikke ennå</option>
+                <option value="Enkel">Enkel — 4 000 kr</option>
+                <option value="Komplett">Komplett — 5 500 kr</option>
+                <option value="Premium">Premium — 8 500 kr</option>
+                <option value="Signatur">Signatur — 12 500 kr</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="melding">Melding (valgfri)</label>
+            <textarea id="melding" name="melding"
+                      placeholder="Fortell gjerne litt om bryllupet — dato, sted, antall gjester, og hva dere ønsker dere av nettsiden."></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn--primary" id="submitBtn">
+              Send melding
+            </button>
+            <div class="form-message form-message--success" id="formSuccess" role="alert">
+              Takk! Jeg tar kontakt innen én arbeidsdag.
+            </div>
+            <div class="form-message form-message--error" id="formError" role="alert">
+              Noe gikk galt. Send gjerne en e-post direkte til kontakt@bryllupsstudio.no
+            </div>
+          </div>
+        </form>
+
       </div>
     </section>
 
@@ -251,11 +590,19 @@
   <!-- FOOTER -->
   <footer class="footer" id="footer">
     <div class="container">
-      <p class="footer__brand">bryllupsyudi</p>
-      <!-- TODO: lenker (personvern, vilkår), kontaktinfo -->
+      <span class="footer__brand">bryllupsyudi</span>
+
+      <nav class="footer__links" aria-label="Sidefooter-lenker">
+        <a href="privacy.html">Personvern</a>
+        <a href="terms.html">Vilkår</a>
+        <a href="#kontakt">Kontakt</a>
+        <!-- TODO: legg til lenke til referansesiden (Ingrid & Herman) når den er offentlig -->
+      </nav>
+
+      <p class="footer__copy">© 2025 Herman Haukenes</p>
       <p class="footer__note">
         Bygget med <a href="https://claude.ai/code" rel="noopener">Claude Code</a>
-        &nbsp;·&nbsp; Hostet på GitHub Pages
+        &nbsp;·&nbsp; Hostet på <a href="https://pages.github.com" rel="noopener">GitHub Pages</a>
       </p>
     </div>
   </footer>
