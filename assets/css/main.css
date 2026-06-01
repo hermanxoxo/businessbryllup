@@ -759,7 +759,30 @@ h4, h5, h6 {
 /* ============================================================
    PRICING SECTION
    ============================================================ */
-.pricing { background: var(--beige); }
+.pricing {
+  background: var(--beige);
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.pricing__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  opacity: .13;
+  mix-blend-mode: multiply;
+}
+
+.pricing .container {
+  position: relative;
+  z-index: 1;
+}
 
 .pricing__header {
   text-align: center;
@@ -904,27 +927,6 @@ h4, h5, h6 {
   margin-top: 2rem;
 }
 
-.pricing__dog-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: .85rem;
-  margin-bottom: 3.5rem;
-}
-.pricing__dog-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 20%;
-  border: 4px solid var(--white);
-  box-shadow: var(--shadow-lg);
-}
-.pricing__dog-caption {
-  font-size: .8rem;
-  font-style: italic;
-  color: var(--text-muted);
-}
 
 /* ============================================================
    PROCESS SECTION
