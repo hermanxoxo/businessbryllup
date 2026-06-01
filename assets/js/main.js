@@ -1,4 +1,4 @@
-/* bryllupsyudi — main.js */
+/* bryllupsverdi — main.js */
 
 // NAV: legg til .scrolled-klasse etter 10px scroll
 const header = document.getElementById('site-header');

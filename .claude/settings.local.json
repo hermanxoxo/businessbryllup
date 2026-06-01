@@ -16,7 +16,10 @@
       "Bash(git push *)",
       "Bash(git rm *)",
       "Bash(git commit *)",
-      "Bash(git restore *)"
+      "Bash(git restore *)",
+      "Bash(gh api *)",
+      "Bash(dir C:\\\\Users\\\\herma\\\\Desktop\\\\Bilder Potrett *)",
+      "Bash(copy *)"
     ]
   }
 }
