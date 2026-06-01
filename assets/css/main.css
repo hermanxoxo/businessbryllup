@@ -948,6 +948,28 @@ h4, h5, h6 {
   margin-top: 2rem;
 }
 
+.pricing__dog-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .85rem;
+  margin-bottom: 3.5rem;
+}
+.pricing__dog-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 4px solid var(--white);
+  box-shadow: var(--shadow-lg);
+}
+.pricing__dog-caption {
+  font-size: .8rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
 /* ============================================================
    PROCESS SECTION
    ============================================================ */
