@@ -44,30 +44,6 @@ const animObserver = new IntersectionObserver(
 
 document.querySelectorAll('[data-animate]').forEach(el => animObserver.observe(el));
 
-// SPRÅKVELGER — lagre valg i localStorage og redirect
-document.querySelectorAll('[data-lang]').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    const lang = btn.dataset.lang;
-    localStorage.setItem('preferred-lang', lang);
-    // Redirect håndteres av href på ankeret
-  });
-});
-
-// Automatisk språkredirect ved første besøk
-(function checkLang() {
-  const stored = localStorage.getItem('preferred-lang');
-  const current = document.documentElement.lang; // 'no' eller 'en'
-  if (!stored) return;
-
-  const isEnPage = window.location.pathname.includes('/en/') || window.location.pathname.includes('/en');
-  if (stored === 'en' && current === 'no' && !isEnPage) {
-    window.location.replace('/en/');
-  }
-  if (stored === 'no' && current === 'en') {
-    window.location.replace('/');
-  }
-})();
-
 // BOOKING URL — vis Calendly-knapp automatisk når CONFIG.BOOKING_URL er satt
 (function initBooking() {
   if (typeof CONFIG === 'undefined' || !CONFIG.BOOKING_URL) return;
