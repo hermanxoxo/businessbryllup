@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nora & Erik — 6. juni 2026</title>
+  <title>Lea & Mikkel — 13. september 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- DEMO BANNER -->
   <div class="demo-banner">
-    <span>Demo laget av <a href="../../index.html">bryllupsverdi.no</a></span>
-    <span class="demo-banner__style">Moderne Minimal</span>
-    <span>Din side kan se slik ut</span>
+    <span>Demo laget av <a href="../../index.html">bryllupsverdi</a></span>
+    <span class="demo-banner__style">Moderne Urban</span>
+    <a href="../../index.html#kontakt">Bestill din side →</a>
   </div>
 
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" aria-label="Navigasjon">
     <div class="nav__inner">
-      <span class="nav__logo">Nora & Erik — 06.06.26</span>
+      <span class="nav__logo">Lea &amp; Mikkel</span>
       <ul class="nav__links">
+        <li><a href="#historie">Historie</a></li>
         <li><a href="#program">Program</a></li>
         <li><a href="#praktisk">Praktisk</a></li>
         <li><a href="#gaver">Gaver</a></li>
@@ -32,313 +33,374 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero__text-side">
-      <p class="hero__eyebrow">Lørdag 6. juni 2026</p>
-      <h1 class="hero__title">
-        Nora<br>
-        <em>&</em><br>
-        Erik
-      </h1>
-      <p class="hero__date">Vippa, Oslo · Ceremoni kl. 14:00</p>
-      <a href="#rsvp" class="btn-accent">RSVP nå</a>
-    </div>
-    <div class="hero__img-side">
-      <img src="../../assets/images/wedding-person-2.jpg"
-           alt="Nora & Erik" fetchpriority="high">
+  <section class="hero" aria-label="Forside">
+    <img class="hero__img" src="../../assets/images/hero-minimal.jpg" alt="Lea og Mikkel" loading="eager">
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow">Sentralen · Oslo · 13. september 2026</span>
+      <div class="hero__names" aria-label="Lea og Mikkel">
+        Lea
+        <span class="amp">&amp;</span>
+        Mikkel
+      </div>
+      <span class="hero__date">Vi gifter oss</span>
+      <div class="hero__cta">
+        <a href="#rsvp" class="btn-sand">Meld deg på</a>
+        <a href="#program" class="btn-outline">Se program</a>
+      </div>
     </div>
   </section>
-
 
   <!-- VÅR HISTORIE -->
-  <section class="section section--white" id="historie">
+  <section class="section section--white" id="historie" aria-labelledby="historie-heading">
     <div class="container">
       <div class="story__grid">
-        <div>
-          <span class="section__label">Om oss</span>
-          <h2 class="section__title">Nora & Erik</h2>
-          <div class="section__rule"></div>
-          <div class="story__body">
-            <p class="story__pull">"Vi møttes på en tech-konferanse i 2020 og bestemte oss umiddelbart for å hente kaffe."</p>
-            <p>Det kaffemøtet ble til et halvt år med lange telefonsamtaler, og til slutt fant Nora på å flytte fra Trondheim til Oslo. Resten, som de sier, er historie.</p>
-            <p>Fire år, tre byer og én forlovelse i Tokyo senere — er vi endelig klare for å si ja foran dere vi er mest glade i.</p>
-            <p>Vi ser frem til å feire med dere på Vippa — midt i hjertet av Oslo, med Oslofjorden som bakteppe.</p>
-          </div>
-        </div>
-        <div class="story__img">
-          <img src="../../assets/images/wedding-person-2.jpg" alt="Nora & Erik">
+        <div class="story__number" aria-hidden="true">01</div>
+        <div class="story__body">
+          <span class="section__tag">Vår historie</span>
+          <h2 id="historie-heading" class="section__heading">Fra naboer til kjærligheter</h2>
+          <p class="story__lead">Det startet med et surt brev i postkassen om at musikken var for høy. Det endte med noe langt bedre.</p>
+          <p>Lea hadde nettopp flyttet inn i leiligheten over, Mikkel hadde bodd i huset i tre år. En lapp. Et svar. En unnskyldningskake på døren. Resten er historie.</p>
+          <p>Tre år med Oslo, reiser til Tokyo og New York, hundrevis av kaffetimer på Fuglen, og et felles prosjekt de kaller «leiligheten» — et gammelt Grünerløkka-bygg de er i ferd med å gjøre til sitt hjem.</p>
+          <blockquote class="story__quote">
+            «Jeg visste det da hun banket på døren min med den kaken.»
+          </blockquote>
+          <p>13. september sier vi ja til hverandre — og vi kan ikke tenke oss en bedre måte å markere det på enn å feire med alle dere vi er glade i.</p>
+          <span class="story__sig">— Lea &amp; Mikkel</span>
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- PROGRAM -->
-  <section class="section section--grey" id="program">
-    <div class="container">
-      <span class="section__label">Dagen</span>
-      <h2 class="section__title">Program</h2>
-      <div class="section__rule"></div>
-      <div class="programme__grid">
-        <div class="programme__item">
-          <p class="programme__time">13:30</p>
-          <p class="programme__title">Oppmøte</p>
-          <p class="programme__desc">Alle gjester møter opp ved Vippa, Akershusstranda 25, Oslo.</p>
+  <section class="section section--warm" id="program" aria-labelledby="program-heading">
+    <div class="container--narrow">
+      <span class="section__tag">Lørdag 13. september 2026</span>
+      <h2 id="program-heading" class="section__heading">Dagens program</h2>
+      <div class="section__line" aria-hidden="true"></div>
+
+      <div class="programme__list" role="list">
+
+        <div class="programme__item" role="listitem">
+          <span class="programme__num" aria-hidden="true">01</span>
+          <div>
+            <div class="programme__time">13:30</div>
+            <div class="programme__title">Ankomst og velkomst</div>
+            <p class="programme__desc">Dørene åpner på Sentralen. Champagne og alkoholfrie drinks serveres i det vakre industrihallmiljøet.</p>
+          </div>
         </div>
-        <div class="programme__item">
-          <p class="programme__time">14:00</p>
-          <p class="programme__title">Seremoni</p>
-          <p class="programme__desc">Vielse utendørs med utsikt over Oslofjorden.</p>
-          <p class="programme__note">Vær punktlig.</p>
+
+        <div class="programme__item" role="listitem">
+          <span class="programme__num" aria-hidden="true">02</span>
+          <div>
+            <div class="programme__time">14:30</div>
+            <div class="programme__title">Vielse</div>
+            <p class="programme__desc">Borgerlig vielse i Sentralens store sal. Vi ber alle gjester sitte på plass senest kl. 14:20.</p>
+            <span class="programme__tag">Telefon i lommen, takk</span>
+          </div>
         </div>
-        <div class="programme__item">
-          <p class="programme__time">15:30</p>
-          <p class="programme__title">Cocktailtime</p>
-          <p class="programme__desc">Champagne, kanapeer og fotografering på terrassen.</p>
+
+        <div class="programme__item" role="listitem">
+          <span class="programme__num" aria-hidden="true">03</span>
+          <div>
+            <div class="programme__time">15:30</div>
+            <div class="programme__title">Fotografering og mingling</div>
+            <p class="programme__desc">God tid til å prate, ta bilder og ta seg en drink i de historiske kortene fra 1918.</p>
+          </div>
         </div>
-        <div class="programme__item">
-          <p class="programme__time">17:00</p>
-          <p class="programme__title">Middag</p>
-          <p class="programme__desc">Tresretters middag, taler og dans. Toastmaster: Sara Lie.</p>
+
+        <div class="programme__item" role="listitem">
+          <span class="programme__num" aria-hidden="true">04</span>
+          <div>
+            <div class="programme__time">18:00</div>
+            <div class="programme__title">Festmiddag</div>
+            <p class="programme__desc">Fem retter med norske råvarer. Vegetar- og veganalternativer på forespørsel ved RSVP. Taler koordinert av toastmaster.</p>
+          </div>
         </div>
-        <div class="programme__item">
-          <p class="programme__time">01:00</p>
-          <p class="programme__title">Avslutning</p>
-          <p class="programme__desc">Siste dans. Taxi og T-bane er lett tilgjengelig.</p>
+
+        <div class="programme__item" role="listitem">
+          <span class="programme__num" aria-hidden="true">05</span>
+          <div>
+            <div class="programme__time">22:00</div>
+            <div class="programme__title">Dans og nattmat</div>
+            <p class="programme__desc">DJ setter i gang og baren åpner for fullt. Nattmat fra kl. 00:00. Sentralen stenger kl. 03:00.</p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
-
 
   <!-- PRAKTISK -->
-  <section class="section section--white" id="praktisk">
-    <div class="container container--narrow">
-      <span class="section__label">Logistikk</span>
-      <h2 class="section__title">Praktisk</h2>
-      <div class="section__rule"></div>
-      <div class="praktisk__list">
-        <div class="praktisk__item">
-          <span class="praktisk__item-label">Reise</span>
-          <div class="praktisk__item-content">
-            <p>Vippa ligger sentralt i Oslo, 5 minutters gange fra Nationaltheatret T-banestasjon. Buss linje 54 stopper rett ved Akershusstranda. Vi anbefaler kollektivtransport — parkering er begrenset i området.</p>
-          </div>
+  <section class="section section--white" id="praktisk" aria-labelledby="praktisk-heading">
+    <div class="container">
+      <span class="section__tag">Alt du trenger å vite</span>
+      <h2 id="praktisk-heading" class="section__heading">Praktisk informasjon</h2>
+      <div class="section__line" aria-hidden="true"></div>
+
+      <div class="praktisk__grid">
+
+        <div class="praktisk__card">
+          <div class="praktisk__icon">📍</div>
+          <div class="praktisk__card-title">Lokasjon</div>
+          <p class="praktisk__card-text">
+            <strong>Sentralen</strong><br>
+            Øvre Slottsgate 3, 0157 Oslo<br><br>
+            Historisk bankbygg fra 1918 i Oslo sentrum, midt mellom Karl Johans gate og Aker Brygge.
+          </p>
         </div>
-        <div class="praktisk__item">
-          <span class="praktisk__item-label">Overnatting</span>
-          <div class="praktisk__item-content">
-            <p>Vi anbefaler <strong>Clarion Hotel The Hub</strong> (Oslo Sentralstasjon, 15 min gange) eller <strong>Thon Hotel Rosenkrantz</strong> (Sentrum). Book gjerne tidlig — juni er høysesong i Oslo.</p>
-          </div>
+
+        <div class="praktisk__card">
+          <div class="praktisk__icon">🚇</div>
+          <div class="praktisk__card-title">Reise og transport</div>
+          <p class="praktisk__card-text">
+            <strong>T-bane:</strong> Stortinget (3 min gange), alle linjer.<br>
+            <strong>Tram:</strong> Linje 12/13 til Christiania Torv.<br>
+            <strong>Bil:</strong> Parkering i P-hus Dronning Eufemias gate (5 min).
+          </p>
         </div>
-        <div class="praktisk__item">
-          <span class="praktisk__item-label">Dresscode</span>
-          <div class="praktisk__item-content">
-            <p><strong>Smart casual / dressy casual.</strong> Bryllupet er utendørs og innendørs — komfortable sko anbefales. Det kan være kaldt på kvelden, ta med noe varmt.</p>
-          </div>
+
+        <div class="praktisk__card">
+          <div class="praktisk__icon">🛏</div>
+          <div class="praktisk__card-title">Overnatting</div>
+          <p class="praktisk__card-text">
+            Vi har avtale med <strong>Grand Hotel Oslo</strong> (2 min gange).<br>
+            Bruk kode <strong>LEAMIKKEL26</strong> innen 1. august for avtalt pris.<br><br>
+            Alternativ: Scandic Byporten (700m).
+          </p>
         </div>
-        <div class="praktisk__item">
-          <span class="praktisk__item-label">Barn</span>
-          <div class="praktisk__item-content">
-            <p>Vi ønsker en voksenkveld, men barn under 3 år er selvsagt velkomne med foreldre. Ta kontakt om dere har spørsmål.</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
-
 
   <!-- GAVEØNSKER -->
-  <section class="section section--grey" id="gaver">
-    <div class="container container--narrow">
-      <span class="section__label">Gaver</span>
-      <h2 class="section__title">Gaveønsker</h2>
-      <div class="section__rule"></div>
+  <section class="section section--grey" id="gaver" aria-labelledby="gaver-heading">
+    <div class="container">
       <div class="gifts__inner">
-        <div>
-          <p class="gifts__text">Vi har det meste vi trenger. Det vi virkelig ønsker oss er å oppleve verden sammen — et bidrag til reisekassen vår vil glede oss enormt.</p>
-          <p class="gifts__text" style="margin-top:1rem;">Send gjerne en liten hilsen med overføringen!</p>
+        <div class="gifts__body">
+          <span class="section__tag">Gaveønsker</span>
+          <h2 id="gaver-heading" class="section__heading">Det fineste er at du er der</h2>
+          <div class="section__line" aria-hidden="true"></div>
+          <p>Vi har det vi trenger av ting. Men vi er i gang med å pusse opp leiligheten vår på Grünerløkka, og ønsker du å gi noe, setter vi stor pris på et bidrag til hjemmet.</p>
+          <p>Alle bidrag — store og små — vil bli brukt på prosjekter vi drømmer om: kjøkkenbenken, baderomsgulvet, hagen på taket.</p>
         </div>
-        <div class="gifts__account">
+        <div class="gifts__account-block" role="region" aria-label="Kontoopplysninger">
           <span class="gifts__account-label">Kontonummer</span>
-          <span class="gifts__account-number">3000 12 34567</span>
-          <span class="gifts__account-note">Merk: Reisekassen til Nora & Erik</span>
+          <span class="gifts__account-number">1502.35.48921</span>
+          <span class="gifts__account-note">Merk overføringen «Grünerløkka»</span>
         </div>
       </div>
     </div>
   </section>
 
-
   <!-- RSVP -->
-  <section class="section section--black" id="rsvp">
-    <div class="container container--narrow">
-      <div class="rsvp__header">
-        <span class="section__label">Svar</span>
-        <h2 class="section__title">RSVP</h2>
-        <div class="section__rule"></div>
-        <p class="rsvp__deadline">Svarfrist — 1. april 2026</p>
-      </div>
-      <form class="form" id="rsvpForm">
+  <section class="section section--ink" id="rsvp" aria-labelledby="rsvp-heading">
+    <div class="container--narrow">
+      <span class="section__tag">Svar innen fristen</span>
+      <h2 id="rsvp-heading" class="section__heading">Kommer du?</h2>
+      <div class="section__line" aria-hidden="true"></div>
+      <p class="rsvp__lead">For at vi skal planlegge dagen godt, trenger vi svar fra deg. Bruk skjemaet nedenfor — det tar under ett minutt.</p>
+      <span class="rsvp__deadline">Svarfrist: 1. august 2026</span>
+
+      <form class="form" id="rsvpForm" novalidate>
         <div class="form-row">
           <div class="form-group">
             <label for="navn">Navn</label>
-            <input type="text" id="navn" name="navn" placeholder="Ditt fulle navn" style="background:#1E1D1C; border-color:#3A3935; color:#fff;">
+            <input type="text" id="navn" name="navn" placeholder="Ditt fulle navn" required autocomplete="name">
           </div>
           <div class="form-group">
             <label for="epost">E-post</label>
-            <input type="email" id="epost" name="epost" placeholder="din@epost.no" style="background:#1E1D1C; border-color:#3A3935; color:#fff;">
+            <input type="email" id="epost" name="epost" placeholder="din@epost.no" required autocomplete="email">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="deltar">Kommer du?</label>
-            <select id="deltar" name="deltar" style="background:#1E1D1C; border-color:#3A3935; color:#fff;">
-              <option value="">Velg</option>
-              <option value="ja">Ja!</option>
-              <option value="nei">Nei, dessverre</option>
+            <label for="deltar">Deltar?</label>
+            <select id="deltar" name="deltar" required>
+              <option value="" disabled selected>Velg...</option>
+              <option value="ja">Ja, jeg kommer!</option>
+              <option value="nei">Nei, dessverre ikke</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="folge">Antall gjester</label>
-            <select id="folge" name="folge" style="background:#1E1D1C; border-color:#3A3935; color:#fff;">
+            <label for="antall">Antall (inkl. deg)</label>
+            <select id="antall" name="antall">
               <option value="1">1 person</option>
               <option value="2">2 personer</option>
+              <option value="3">3 personer</option>
             </select>
           </div>
         </div>
         <div class="form-group">
-          <label for="allergi">Kostpreferanser / allergier</label>
-          <input type="text" id="allergi" name="allergi" placeholder="F.eks. vegetar, laktosefri..." style="background:#1E1D1C; border-color:#3A3935; color:#fff;">
+          <label for="diet">Matpreferanser / allergi</label>
+          <input type="text" id="diet" name="diet" placeholder="Vegetar, vegan, glutenfri, nøtteallergi...">
+        </div>
+        <div class="form-group">
+          <label for="melding">Hilsen til oss (valgfritt)</label>
+          <textarea id="melding" name="melding" placeholder="Skriv gjerne noe..."></textarea>
         </div>
         <div class="form-submit">
-          <button type="submit" class="btn-accent">Send svar</button>
-          <p class="demo-note" id="demoNote">→ Demo — skjema sendes ikke i denne visningen</p>
+          <button type="submit" class="btn-sand" style="border:none;cursor:pointer;font-family:var(--font);">Send svar</button>
         </div>
+        <p class="demo-note" id="demoNote">Dette er en demo — på en ekte bryllupsside lagres svar automatisk i Google Sheets.</p>
       </form>
     </div>
   </section>
 
-
   <!-- FAQ -->
-  <section class="section section--white" id="faq">
-    <div class="container container--narrow">
-      <span class="section__label">FAQ</span>
-      <h2 class="section__title">Spørsmål?</h2>
-      <div class="section__rule"></div>
+  <section class="section section--white" id="faq" aria-labelledby="faq-heading">
+    <div class="container--narrow">
+      <span class="section__tag">Spørsmål og svar</span>
+      <h2 id="faq-heading" class="section__heading">Ofte stilte spørsmål</h2>
+      <div class="section__line" aria-hidden="true"></div>
+
       <div class="faq__list">
+
         <details>
-          <summary>Er det parkering ved Vippa?</summary>
-          <div class="faq__answer">Det er begrenset gateparkering i området. Vi anbefaler sterkt kollektivtransport eller taxi. Det finnes parkeringshus ved Aker Brygge (5 min gange).</div>
+          <summary>Hva er dresscode?</summary>
+          <p class="faq__answer">Smart casual med et personlig preg. Ingen formkrav — vi vil at du føler deg deg selv. Tenk: noe du ville brukt på en fin middag. Unngå hvitt og kremfarger.</p>
         </details>
+
         <details>
-          <summary>Kan vi ta med barn?</summary>
-          <div class="faq__answer">Vi ønsker en voksenkveld, men barn under 3 år er selvsagt velkomne. Ta kontakt med Nora eller Erik direkte om dere har spørsmål.</div>
+          <summary>Er barn velkomne?</summary>
+          <p class="faq__answer">Vi har valgt en voksenfest denne gangen. Vi setter pris på at dere finner barnepass, og håper dere forstår.</p>
         </details>
+
         <details>
-          <summary>Hva skjer hvis det regner?</summary>
-          <div class="faq__answer">Seremonien kan flyttes innendørs på Vippa ved dårlig vær. Vi gir beskjed via denne siden om endringer. Følg med!</div>
+          <summary>Kan jeg si noen ord eller holde tale?</summary>
+          <p class="faq__answer">Vi er veldig glade for det! Kontakt toastmaster <strong>Anders Vik</strong> på <strong>anders@eksempel.no</strong> innen 1. september så koordinerer han kvelden.</p>
         </details>
+
         <details>
-          <summary>Kan vi ta bilder under seremonien?</summary>
-          <div class="faq__answer">Vi ber om at alle gjester legger bort telefoner og kamera under selve seremonien. Vi har hyret en profesjonell fotograf som dokumenterer alt — dere får bildene delt i etterkant.</div>
+          <summary>Er det parkering i nærheten?</summary>
+          <p class="faq__answer">Det er P-hus i Dronning Eufemias gate (5 min gange) og ved Aker Brygge. Vi anbefaler likevel kollektivtransport siden Oslo sentrum kan bli travelt en lørdag kveld.</p>
         </details>
+
         <details>
-          <summary>Hva gjør vi hvis vi ikke kan komme likevel?</summary>
-          <div class="faq__answer">Send oss en melding på nora@eksempel.no så fort som mulig. Gi gjerne beskjed senest 2 uker før bryllupet.</div>
+          <summary>Hva om jeg ikke kan komme likevel?</summary>
+          <p class="faq__answer">Send oss en melding på lea@eksempel.no så raskt du vet det. Vi forstår at ting kan skje, og vi setter pris på beskjed tidlig slik at vi kan planlegge mat og sitteplasser.</p>
         </details>
+
+        <details>
+          <summary>Vil bilder legges ut i ettertid?</summary>
+          <p class="faq__answer">Ja! Vi har hyret en profesjonell fotograf. Bildene deles i et privat galleri via denne nettsiden etter bryllupet. Hold av lenken.</p>
+        </details>
+
       </div>
     </div>
   </section>
 
-
   <!-- DESIGN PALETTE -->
-  <section class="palette" id="designpalett">
+  <section class="palette" id="palett" aria-labelledby="palett-heading">
     <div class="container">
-      <span class="palette__label">bryllupsverdi.no — designreferanse</span>
-      <h2 class="palette__heading">Moderne Minimal — <strong>farger & typografi</strong></h2>
+      <span class="palette__tag">bryllupsverdi — Designreferanse</span>
+      <h2 id="palett-heading" class="palette__heading">Moderne Urban — <span>farger &amp; typografi</span></h2>
 
       <div class="palette__grid">
+
+        <!-- Farger -->
         <div>
-          <p class="palette__section-title">Fargepalett</p>
+          <p class="palette__col-title">Fargepalett</p>
           <div class="palette__colors">
+
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#F6F5F2"></div>
+              <div class="palette__swatch-box" style="background:#F7F4F0;"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#F6F5F2</span>
-                <span class="palette__swatch-name">Off-white — bakgrunn</span>
+                <span class="palette__swatch-hex">#F7F4F0</span>
+                <span class="palette__swatch-name">Varm hvit — bakgrunn</span>
               </div>
             </div>
+
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#E8E4DE"></div>
+              <div class="palette__swatch-box" style="background:#B89878;"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#E8E4DE</span>
-                <span class="palette__swatch-name">Varm grå — seksjonsskift</span>
+                <span class="palette__swatch-hex">#B89878</span>
+                <span class="palette__swatch-name">Sand/Karamel — aksent</span>
               </div>
             </div>
+
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#B84C2A"></div>
+              <div class="palette__swatch-box" style="background:#171512;"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#B84C2A</span>
-                <span class="palette__swatch-name">Terracotta — aksent</span>
+                <span class="palette__swatch-hex">#171512</span>
+                <span class="palette__swatch-name">Nærsort — tekst og bakgrunn</span>
               </div>
             </div>
+
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#111110"></div>
+              <div class="palette__swatch-box" style="background:#EDE8DF;"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#111110</span>
-                <span class="palette__swatch-name">Nesten sort — tekst</span>
+                <span class="palette__swatch-hex">#EDE8DF</span>
+                <span class="palette__swatch-name">Varm grå — delikat bakgrunn</span>
               </div>
             </div>
+
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#5C5852"></div>
+              <div class="palette__swatch-box" style="background:#4A403A;"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#5C5852</span>
-                <span class="palette__swatch-name">Varm mørkegrå — sekundær tekst</span>
+                <span class="palette__swatch-hex">#4A403A</span>
+                <span class="palette__swatch-name">Mellomtone — brødtekst</span>
               </div>
             </div>
+
           </div>
         </div>
+
+        <!-- Typografi -->
         <div>
-          <p class="palette__section-title">Typografi</p>
+          <p class="palette__col-title">Typografi — DM Sans</p>
           <div class="palette__type">
+
             <div class="palette__type-item">
-              <span class="palette__type-label">Tittel / Hero</span>
-              <span class="palette__type-sample" style="font-family:'DM Sans',sans-serif; font-size:2.8rem; font-weight:300; letter-spacing:-.03em;">Nora & Erik</span>
-              <span class="palette__type-meta">DM Sans · 300 · 45–72px · tracking -0.03em</span>
+              <span class="palette__type-label">Hero / tittel</span>
+              <span class="palette__type-sample" style="font-family:'DM Sans',system-ui,sans-serif;font-size:3rem;font-weight:800;letter-spacing:-.03em;line-height:1;">Lea &amp; Mikkel</span>
+              <span class="palette__type-meta">DM Sans · 800 · 48–96px · letter-spacing -.02em</span>
             </div>
+
             <div class="palette__type-item">
               <span class="palette__type-label">Seksjonstittel</span>
-              <span class="palette__type-sample" style="font-family:'DM Sans',sans-serif; font-size:1.8rem; font-weight:700; letter-spacing:-.02em;">Program</span>
-              <span class="palette__type-meta">DM Sans · 700 · 32–48px</span>
+              <span class="palette__type-sample" style="font-family:'DM Sans',system-ui,sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:-.02em;line-height:1.1;">Vår historie</span>
+              <span class="palette__type-meta">DM Sans · 700 · 28–42px</span>
             </div>
+
             <div class="palette__type-item">
               <span class="palette__type-label">Brødtekst</span>
-              <span class="palette__type-sample" style="font-family:'DM Sans',sans-serif; font-size:.97rem; font-weight:400; color:rgba(255,255,255,.6);">Vi møttes på en tech-konferanse i 2020...</span>
-              <span class="palette__type-meta">DM Sans · 400 · 15–16px · lh 1.8</span>
+              <span class="palette__type-sample" style="font-family:'DM Sans',system-ui,sans-serif;font-size:.95rem;font-weight:400;color:rgba(255,255,255,.6);line-height:1.8;">Det startet med en lapp i postkassen og endte med noe mye bedre.</span>
+              <span class="palette__type-meta">DM Sans · 400 · 15–16px · line-height 1.8</span>
             </div>
+
+            <div class="palette__type-item">
+              <span class="palette__type-label">Label / etikett</span>
+              <span class="palette__type-sample" style="font-family:'DM Sans',system-ui,sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#B89878;">Svarfrist: 1. august 2026</span>
+              <span class="palette__type-meta">DM Sans · 700 · 10–11px · uppercase · tracking .18em</span>
+            </div>
+
           </div>
         </div>
+
       </div>
 
       <div class="palette__cta">
-        <p class="palette__cta-text">Er <strong>Moderne Minimal</strong> stilen for dere?</p>
-        <a href="../../index.html#kontakt" class="palette__cta-link">Kom i gang — bryllupsverdi.no</a>
+        <p class="palette__cta-text">Vil du ha <span>Moderne Urban</span> på din bryllupsside?</p>
+        <a href="../../index.html#kontakt" class="palette__cta-link">Kontakt bryllupsverdi</a>
       </div>
     </div>
   </section>
 
-
   <!-- FOOTER -->
   <footer class="footer">
-    <p class="footer__names">NORA & ERIK</p>
-    <p>06.06.2026 · Vippa, Oslo</p>
-    <p style="margin-top:.5rem; opacity:.3;">Siden er laget av bryllupsverdi.no</p>
+    <p class="footer__names">Lea Larsen &amp; Mikkel Dahl</p>
+    <p>13. september 2026 &nbsp;·&nbsp; Sentralen, Oslo</p>
+    <p style="margin-top:.5rem;font-size:.72rem;">Nettside laget av <a href="../../index.html">bryllupsverdi</a></p>
   </footer>
 
   <script>
-    document.getElementById('rsvpForm').addEventListener('submit', e => {
+    document.getElementById('rsvpForm').addEventListener('submit', function(e) {
       e.preventDefault();
       document.getElementById('demoNote').style.display = 'block';
     });
   </script>
+
 </body>
 </html>
