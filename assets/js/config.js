@@ -3,10 +3,9 @@
  * Alle variabler som trenger å byttes ved oppstart eller ved nytt domene.
  */
 const CONFIG = {
-  // Oppdater når domenet er klart
   BRAND_NAME:        'bryllupsverdi',
   CONTACT_EMAIL:     'kontakt@bryllupsstudio.no',
-  BASE_URL:          'https://hermanxoxo.github.io/businessbryllup',
+  BASE_URL:          'https://bryllupsverdi.no',
 
   // Sett til Calendly-URL når konto er opprettet — Calendly-knapp vises automatisk
   BOOKING_URL:       null,
