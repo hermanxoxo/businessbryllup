@@ -19,7 +19,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: var(--font); font-size: 18px; line-height: 1.75; color: var(--text); background: var(--ivory); -webkit-font-smoothing: antialiased; }
+body { font-family: var(--font); font-size: 20px; line-height: 1.8; color: var(--text); background: var(--ivory); -webkit-font-smoothing: antialiased; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
@@ -303,6 +303,94 @@ a { color: inherit; }
 .praktisk__card-text { font-size: .95rem; color: var(--text-light); line-height: 1.7; }
 .praktisk__card strong { color: var(--text); font-style: italic; }
 
+/* LOGIN OVERLAY */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: var(--ivory);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: opacity .4s ease;
+}
+.login-box {
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.login-eyebrow {
+  font-size: .8rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.login-title {
+  font-size: clamp(3rem, 10vw, 5rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.1;
+}
+.login-title span {
+  display: block;
+  font-size: .55em;
+  font-style: normal;
+  color: var(--gold);
+  letter-spacing: .2em;
+  margin-block: .1em;
+}
+.login-date {
+  font-size: .88rem;
+  letter-spacing: .12em;
+  color: var(--text-light);
+  font-style: italic;
+  margin-bottom: .5rem;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .85rem;
+  width: 100%;
+  margin-top: .5rem;
+}
+.login-label {
+  font-size: .78rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+.login-input {
+  width: 100%;
+  max-width: 280px;
+  padding: .85rem 1.25rem;
+  border: 1px solid rgba(168,129,58,.4);
+  background: var(--cream);
+  font-family: var(--font);
+  font-size: 1.4rem;
+  letter-spacing: .3em;
+  text-align: center;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s;
+}
+.login-input:focus { border-color: var(--gold); }
+.login-btn { margin-top: .25rem; }
+.login-demo-note {
+  font-size: .82rem;
+  font-style: italic;
+  color: var(--gold);
+  margin-top: .75rem;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
 /* GAVEØNSKER */
 .gifts__text {
   text-align: center;
@@ -334,6 +422,35 @@ a { color: inherit; }
   font-weight: 500;
   letter-spacing: .08em;
   color: var(--text);
+}
+
+.gifts__onsk {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  border: 1px solid var(--gold);
+  padding: .9rem 2rem;
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: .08em;
+  transition: all var(--transition);
+  margin-bottom: 2rem;
+}
+.gifts__onsk:hover { background: var(--gold); color: var(--ivory); }
+.gifts__alt {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+.gifts__alt-icon { font-size: 1.8rem; color: var(--gold); }
+.gifts__alt > p {
+  font-size: .97rem;
+  font-style: italic;
+  color: var(--text-light);
 }
 
 /* RSVP */
