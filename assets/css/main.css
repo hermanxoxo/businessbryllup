@@ -877,6 +877,15 @@ h4, h5, h6 {
 
 .price-card--featured .price-card__currency { color: rgba(255,255,255,.55); }
 
+.price-card__desc {
+  font-size: .88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: -.25rem 0;
+}
+
+.price-card--featured .price-card__desc { color: rgba(255,255,255,.6); }
+
 .price-card__divider {
   height: 1px;
   background: var(--beige);
