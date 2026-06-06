@@ -958,7 +958,7 @@ h4, h5, h6 {
 
 .process__header {
   text-align: center;
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto 4rem;
 }
 
@@ -1104,6 +1104,27 @@ h4, h5, h6 {
   font-size: .97rem;
   color: var(--text);
   line-height: 1.8;
+}
+
+.about__contact {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-top: .25rem;
+}
+
+.about__contact-item {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  font-size: .97rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.about__contact-item:hover {
+  color: var(--primary);
 }
 
 .about__quote {
