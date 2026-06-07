@@ -2,14 +2,14 @@
    Klassisk Eleganse — bryllupsverdi demo
    ============================================================ */
 :root {
-  --ivory:      #F1F4EE;
-  --cream:      #D8E2D0;
-  --forest:     #28423A;
-  --forest-mid: #3D6054;
-  --forest-pale:#E4EDE0;
-  --gold:       #8A6818;
-  --text:       #131810;
-  --text-mid:   #2A3828;
+  --ivory:      #FAF8F4;
+  --cream:      #EDE8DF;
+  --forest:     #3D2F1E;
+  --forest-mid: #7A6448;
+  --forest-pale:#F4EFE6;
+  --gold:       #C4875A;
+  --text:       #3D2F1E;
+  --text-mid:   #7A6B5A;
   --white:      #FFFFFF;
 
   --font: 'Cormorant Garamond', Georgia, serif;
@@ -61,7 +61,7 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(241,244,238,.97);
+  background: rgba(250,248,244,.97);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--cream);
 }
@@ -113,7 +113,7 @@ a { color: inherit; }
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(19,24,16,.40) 0%, rgba(19,24,16,.65) 100%);
+  background: linear-gradient(to bottom, rgba(61,47,30,.40) 0%, rgba(61,47,30,.65) 100%);
 }
 .hero__content {
   position: relative;
@@ -449,14 +449,14 @@ details[open] summary { color: var(--forest); }
 }
 
 /* DESIGN PALETTE */
-.palette { background: #0E1510; color: rgba(255,255,255,.85); padding: 80px 2rem; }
+.palette { background: #1E1208; color: rgba(255,255,255,.85); padding: 80px 2rem; }
 .palette .container { max-width: 940px; margin: 0 auto; }
 .palette__label {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: .65rem;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: #8FC49A;
+  color: #C4875A;
   margin-bottom: .75rem;
   display: block;
 }
@@ -524,12 +524,12 @@ details[open] summary { color: var(--forest); }
   gap: 1.5rem;
 }
 .palette__cta-text { font-size: 1.5rem; font-style: italic; color: var(--white); }
-.palette__cta-text span { color: #8FC49A; }
+.palette__cta-text span { color: #C4875A; }
 .palette__cta-link {
   display: inline-block;
   padding: .8rem 2rem;
-  border: 1px solid rgba(143,196,154,.5);
-  color: #8FC49A;
+  border: 1px solid rgba(196,135,90,.5);
+  color: #C4875A;
   text-decoration: none;
   font-size: .85rem;
   letter-spacing: .12em;
@@ -541,7 +541,7 @@ details[open] summary { color: var(--forest); }
 
 /* FOOTER */
 .footer {
-  background: #080E0A;
+  background: #160C06;
   color: rgba(255,255,255,.42);
   text-align: center;
   padding: 3rem 1rem;
