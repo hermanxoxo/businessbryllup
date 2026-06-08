@@ -6,7 +6,7 @@
   <title>Ingrid & Alexander — 22. august 2026</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +14,14 @@
   <!-- DEMO BANNER -->
   <div class="demo-banner">
     <span>Demo laget av <a href="../../index.html">bryllupsverdi.no</a></span>
-    <span class="demo-banner__style">Klassisk Eleganse</span>
+    <span class="demo-banner__style">Moderne Minimalistisk</span>
     <span>Din side kan se slik ut</span>
   </div>
 
   <!-- NAV -->
   <nav class="nav">
     <div class="nav__inner">
-      <span class="nav__logo">I & A</span>
+      <span class="nav__logo">Ingrid & Alexander</span>
       <ul class="nav__links">
         <li><a href="#program">Program</a></li>
         <li><a href="#praktisk">Praktisk</a></li>
@@ -37,7 +37,7 @@
          alt="Ingrid & Alexander" fetchpriority="high">
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">Lørdag 22. august 2026 &nbsp;·&nbsp; Stavanger</p>
+      <p class="hero__eyebrow">Lørdag 22. august 2026 · Stavanger</p>
       <h1 class="hero__title">
         Ingrid
         <span>&amp;</span>
@@ -52,9 +52,9 @@
   <!-- VÅR HISTORIE -->
   <section class="section section--ivory" id="historie">
     <div class="container">
-      <span class="ornament">❧</span>
-      <h2 class="section__title">Vår historie</h2>
-      <div class="divider-gold divider-gold--wide"></div>
+      <span class="section__eyebrow">Vår historie</span>
+      <h2 class="section__title">Ingrid & Alexander</h2>
+      <div class="section__divider"></div>
 
       <div class="story__grid">
         <div class="story__img">
@@ -75,10 +75,9 @@
   <!-- PROGRAM -->
   <section class="section section--cream" id="program">
     <div class="container container--narrow">
-      <span class="ornament">✦</span>
+      <span class="section__eyebrow">Dagen</span>
       <h2 class="section__title">Program</h2>
       <p class="section__subtitle">Lørdag 22. august 2026</p>
-      <div class="divider-gold"></div>
 
       <div class="programme__schedule">
         <div class="programme__item">
@@ -126,9 +125,9 @@
   <!-- PRAKTISK -->
   <section class="section section--ivory" id="praktisk">
     <div class="container">
-      <span class="ornament">❦</span>
+      <span class="section__eyebrow">Informasjon</span>
       <h2 class="section__title">Praktisk informasjon</h2>
-      <div class="divider-gold"></div>
+      <div class="section__divider"></div>
 
       <div class="praktisk__grid">
         <div class="praktisk__card">
@@ -161,37 +160,46 @@
 
 
   <!-- GAVEØNSKER -->
-  <section class="section section--gold" id="gaver">
+  <section class="section section--cream" id="gaver">
     <div class="container container--narrow">
-      <span class="ornament">✧</span>
+      <span class="section__eyebrow">Gaver</span>
       <h2 class="section__title">Gaveønsker</h2>
-      <div class="divider-gold"></div>
-      <p class="gifts__text">
-        Din tilstedeværelse er den største gaven vi kan ønske oss. Om du likevel ønsker å bidra med noe, finner du ønskelisten vår her:
+      <div class="section__divider"></div>
+      <p class="gifts__intro">
+        Din tilstedeværelse er den største gaven vi kan ønske oss. Om du likevel ønsker å bidra med noe, finner du muligheter nedenfor.
       </p>
 
-      <a href="https://onsk.no/" target="_blank" rel="noopener" class="gifts__onsk">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg>
-        Ønskeliste på onsk.no
-      </a>
+      <div class="gifts__grid">
+        <div class="gifts__card">
+          <div class="gifts__card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z"/></svg>
+          </div>
+          <h3 class="gifts__card-title">Ønskeliste</h3>
+          <p class="gifts__card-text">Vi har samlet ønskene våre på onsk.no — enkelt og oversiktlig.</p>
+          <a href="https://onsk.no/" target="_blank" rel="noopener" class="gifts__card-link">Se ønskeliste</a>
+        </div>
 
-      <div class="gifts__alt">
-        <span class="gifts__alt-icon">✈</span>
-        <p>Ønsker du heller å bidra til bryllupsreisen vår til Japan, tar vi imot med takk.</p>
-        <p class="gifts__account-number">1503 45 67890</p>
-        <p class="gifts__account-note">Merk: Japan 2026</p>
+        <div class="gifts__card">
+          <div class="gifts__card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 2c-2-2-4-2-5.5-.5L10 5 1.8 6.2c-.5.1-.9.5-1.1.9l-.3 1.3c-.1.5.1 1.1.5 1.5l2 2"/><path d="m13.9 16.9-3.9-3.9"/><circle cx="5" cy="19" r="1"/><circle cx="7" cy="17" r="1"/></svg>
+          </div>
+          <h3 class="gifts__card-title">Bryllupsreise</h3>
+          <p class="gifts__card-text">Vi drømmer om Japan. Et bidrag til reisen mottas med stor takknemlighet.</p>
+          <p class="gifts__card-account">1503 45 67890</p>
+          <p class="gifts__card-note">Merk: Japan 2026</p>
+        </div>
       </div>
     </div>
   </section>
 
 
-  <!-- RSVP -->
-  <section class="section section--cream" id="rsvp">
+  <!-- PÅMELDING -->
+  <section class="section section--ivory" id="rsvp">
     <div class="container container--narrow">
-      <span class="ornament">✉</span>
+      <span class="section__eyebrow">Svar innen 1. mai 2026</span>
       <h2 class="section__title">Påmelding</h2>
-      <div class="divider-gold"></div>
-      <p class="rsvp__intro">Vi ønsker så gjerne å vite om du kommer! Fyll ut skjemaet nedenfor og send svar innen fristen.</p>
+      <div class="section__divider"></div>
+      <p class="rsvp__intro">Vi ønsker så gjerne å vite om du kommer. Fyll ut skjemaet nedenfor og send svar innen fristen.</p>
       <p class="rsvp__deadline">Svarfrist: 1. mai 2026</p>
 
       <form class="form" id="rsvpForm">
@@ -232,8 +240,8 @@
           <textarea id="melding" name="melding" placeholder="..."></textarea>
         </div>
         <div class="form-submit">
-          <button type="submit" class="btn-gold">Send svar</button>
-          <p class="demo-note" id="demoNote">✦ Demo — skjema sendes ikke i denne visningen</p>
+          <button type="submit" class="btn-submit">Send svar</button>
+          <p class="demo-note" id="demoNote">Demo — skjema sendes ikke i denne visningen</p>
         </div>
       </form>
     </div>
@@ -241,11 +249,11 @@
 
 
   <!-- FAQ -->
-  <section class="section section--ivory" id="faq">
+  <section class="section section--cream" id="faq">
     <div class="container container--narrow">
-      <span class="ornament">?</span>
+      <span class="section__eyebrow">Spørsmål og svar</span>
       <h2 class="section__title">Ofte stilte spørsmål</h2>
-      <div class="divider-gold divider-gold--wide"></div>
+      <div class="section__divider"></div>
       <div class="faq__list">
         <details>
           <summary>Er barn velkomne?</summary>
@@ -276,45 +284,45 @@
   <section class="palette" id="designpalett">
     <div class="container">
       <span class="palette__label">bryllupsverdi.no — designreferanse</span>
-      <h2 class="palette__heading">Klassisk Eleganse — farger & typografi</h2>
+      <h2 class="palette__heading">Moderne Minimalistisk — farger & typografi</h2>
 
       <div class="palette__grid">
         <div>
           <p class="palette__section-title">Fargepalett</p>
           <div class="palette__colors">
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#FAF7F0"></div>
+              <div class="palette__swatch-box" style="background:#FAF8F5"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#FAF7F0</span>
+                <span class="palette__swatch-hex">#FAF8F5</span>
                 <span class="palette__swatch-name">Ivory — bakgrunn</span>
               </div>
             </div>
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#EDE3D3"></div>
+              <div class="palette__swatch-box" style="background:#F3EEE8"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#EDE3D3</span>
-                <span class="palette__swatch-name">Krem — seksjonsskift</span>
+                <span class="palette__swatch-hex">#F3EEE8</span>
+                <span class="palette__swatch-name">Linen — seksjonsskift</span>
               </div>
             </div>
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#8B6845"></div>
+              <div class="palette__swatch-box" style="background:#B89B7A"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#8B6845</span>
-                <span class="palette__swatch-name">Brun — primæraksent</span>
+                <span class="palette__swatch-hex">#B89B7A</span>
+                <span class="palette__swatch-name">Sand — primæraksent</span>
               </div>
             </div>
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#C4A882"></div>
+              <div class="palette__swatch-box" style="background:#6B6B6B"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#C4A882</span>
-                <span class="palette__swatch-name">Karamel — detaljer</span>
+                <span class="palette__swatch-hex">#6B6B6B</span>
+                <span class="palette__swatch-name">Grå — sekundærtekst</span>
               </div>
             </div>
             <div class="palette__swatch">
-              <div class="palette__swatch-box" style="background:#2A1F14"></div>
+              <div class="palette__swatch-box" style="background:#2C2C2C"></div>
               <div class="palette__swatch-info">
-                <span class="palette__swatch-hex">#2A1F14</span>
-                <span class="palette__swatch-name">Mørk brun — tekst</span>
+                <span class="palette__swatch-hex">#2C2C2C</span>
+                <span class="palette__swatch-name">Kull — primærtekst</span>
               </div>
             </div>
           </div>
@@ -326,24 +334,24 @@
             <div class="palette__type-item">
               <span class="palette__type-label">Tittel / Hero</span>
               <span class="palette__type-sample" style="font-family:'Cormorant Garamond',serif; font-size:2.8rem; font-style:italic; font-weight:300;">Ingrid & Alexander</span>
-              <span class="palette__type-meta">Cormorant Garamond · 300 Italic · 76–150px</span>
+              <span class="palette__type-meta">Cormorant Garamond · 300 Italic · stor luft</span>
             </div>
             <div class="palette__type-item">
               <span class="palette__type-label">Seksjonstittel</span>
-              <span class="palette__type-sample" style="font-family:'Cormorant Garamond',serif; font-size:1.8rem; font-style:italic; font-weight:400;">Vår historie</span>
-              <span class="palette__type-meta">Cormorant Garamond · 400 Italic · 50–72px</span>
+              <span class="palette__type-sample" style="font-family:'Cormorant Garamond',serif; font-size:1.9rem; font-style:italic; font-weight:400;">Vår historie</span>
+              <span class="palette__type-meta">Cormorant Garamond · 400 Italic</span>
             </div>
             <div class="palette__type-item">
               <span class="palette__type-label">Brødtekst</span>
-              <span class="palette__type-sample" style="font-family:'Cormorant Garamond',serif; font-size:1.05rem; font-weight:400;">Vi møttes høsten 2018 på juridisk fakultet...</span>
-              <span class="palette__type-meta">Cormorant Garamond · 400 · 20px · lh 1.85</span>
+              <span class="palette__type-sample" style="font-family:'Inter',system-ui,sans-serif; font-size:1rem; font-weight:400; line-height:1.75;">Vi møttes høsten 2017 på Universitetet i Oslo...</span>
+              <span class="palette__type-meta">Inter · 400 · 16px · lh 1.75</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="palette__cta">
-        <p class="palette__cta-text">Er <span>Klassisk Eleganse</span> stilen for dere?</p>
+        <p class="palette__cta-text">Er <span>Moderne Minimalistisk</span> stilen for dere?</p>
         <a href="../../index.html#kontakt" class="palette__cta-link">Kom i gang — bryllupsverdi.no</a>
       </div>
     </div>
@@ -354,7 +362,7 @@
   <footer class="footer">
     <p class="footer__names">Ingrid & Alexander</p>
     <p>22. august 2026 · Stavanger Domkirke & Ledaal</p>
-    <p style="margin-top:.5rem; font-size:.8rem; opacity:.4;">Siden er laget av bryllupsverdi.no</p>
+    <p style="margin-top:.5rem; font-size:.75rem; opacity:.3;">Siden er laget av bryllupsverdi.no</p>
   </footer>
 
   <script>
