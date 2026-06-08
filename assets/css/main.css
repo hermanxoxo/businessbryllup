@@ -1389,7 +1389,7 @@ h4, h5, h6 {
 @media (max-width: 900px) {
   .demos__grid { grid-template-columns: 1fr; max-width: 480px; margin-inline: auto; }
   .about__inner { grid-template-columns: 1fr; gap: 3rem; }
-  .about__img-wrap { aspect-ratio: 4/3; max-width: 400px; }
+  .about__img-wrap { aspect-ratio: 3/4; max-width: 340px; margin-inline: auto; }
 }
 
 @media (max-width: 768px) {

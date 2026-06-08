@@ -53,6 +53,18 @@ document.querySelectorAll('[data-animate]').forEach(el => animObserver.observe(e
   });
 })();
 
+// DEMO-KORT: skalér iframe slik at den alltid fyller previewboksen
+function fitDemoFrames() {
+  document.querySelectorAll('.demo-card__preview').forEach(preview => {
+    const frame = preview.querySelector('.demo-card__frame');
+    if (!frame) return;
+    const scale = preview.offsetWidth / 1280;
+    frame.style.transform = `scale(${scale})`;
+  });
+}
+fitDemoFrames();
+window.addEventListener('resize', fitDemoFrames, { passive: true });
+
 // KONTAKTSKJEMA
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
