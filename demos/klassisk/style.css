@@ -2,18 +2,17 @@
    Klassisk Eleganse — bryllupsverdi demo
    ============================================================ */
 :root {
-  --ivory:      #FAF8F4;
-  --cream:      #EDE8DF;
-  --forest:     #3D2F1E;
-  --forest-mid: #7A6448;
-  --forest-pale:#F4EFE6;
-  --gold:       #C4875A;
-  --text:       #3D2F1E;
-  --text-mid:   #7A6B5A;
+  --ivory:      #FAF7F0;
+  --cream:      #EDE3D3;
+  --accent:     #8B6845;
+  --accent-mid: #C4A882;
+  --pale:       #F5EDE0;
+  --text:       #2A1F14;
+  --text-mid:   #6B5840;
   --white:      #FFFFFF;
 
   --font: 'Cormorant Garamond', Georgia, serif;
-  --shadow: 0 4px 32px rgba(19,24,16,.12);
+  --shadow: 0 4px 32px rgba(42,31,20,.12);
   --transition: .25s ease;
 }
 
@@ -29,7 +28,7 @@ body {
 }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
-:focus-visible { outline: 2px solid var(--forest); outline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 /* DEMO BANNER */
 .demo-banner {
@@ -46,10 +45,10 @@ a { color: inherit; }
   align-items: center;
   gap: 1.5rem;
 }
-.demo-banner a { color: #8FC49A; text-decoration: none; }
+.demo-banner a { color: var(--accent-mid); text-decoration: none; }
 .demo-banner a:hover { text-decoration: underline; }
 .demo-banner__style {
-  background: var(--forest);
+  background: var(--accent);
   color: var(--ivory);
   padding: .15rem .7rem;
   border-radius: 2px;
@@ -61,7 +60,7 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250,248,244,.97);
+  background: rgba(250,247,240,.97);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--cream);
 }
@@ -78,7 +77,7 @@ a { color: inherit; }
   font-weight: 400;
   font-style: italic;
   letter-spacing: .07em;
-  color: var(--forest);
+  color: var(--accent);
 }
 .nav__links { display: flex; gap: 2.2rem; list-style: none; }
 .nav__links a {
@@ -89,7 +88,7 @@ a { color: inherit; }
   color: var(--text-mid);
   transition: color var(--transition);
 }
-.nav__links a:hover { color: var(--forest); }
+.nav__links a:hover { color: var(--accent); }
 
 /* HERO */
 .hero {
@@ -113,7 +112,7 @@ a { color: inherit; }
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(61,47,30,.40) 0%, rgba(61,47,30,.65) 100%);
+  background: linear-gradient(to bottom, rgba(42,31,20,.38) 0%, rgba(42,31,20,.62) 100%);
 }
 .hero__content {
   position: relative;
@@ -129,7 +128,7 @@ a { color: inherit; }
   font-size: 1rem;
   letter-spacing: .22em;
   text-transform: uppercase;
-  color: #A8D4B0;
+  color: var(--accent-mid);
 }
 .hero__title {
   font-size: clamp(3.8rem, 10vw, 7.5rem);
@@ -137,14 +136,14 @@ a { color: inherit; }
   font-style: italic;
   line-height: 1.05;
   color: var(--white);
-  text-shadow: 0 2px 40px rgba(0,0,0,.35);
+  text-shadow: 0 2px 40px rgba(0,0,0,.3);
 }
 .hero__title span {
   font-size: .62em;
   font-style: normal;
   font-weight: 300;
   display: block;
-  color: #A8D4B0;
+  color: var(--accent-mid);
   letter-spacing: .22em;
   margin-block: .1em;
 }
@@ -158,7 +157,7 @@ a { color: inherit; }
   display: inline-block;
   margin-top: .5rem;
   padding: .9rem 3rem;
-  border: 1px solid rgba(168,212,176,.6);
+  border: 1px solid rgba(196,168,130,.6);
   color: var(--white);
   text-decoration: none;
   font-size: .95rem;
@@ -167,20 +166,20 @@ a { color: inherit; }
   transition: all var(--transition);
   font-family: var(--font);
 }
-.btn-gold:hover { background: var(--forest); border-color: var(--forest); }
+.btn-gold:hover { background: var(--accent); border-color: var(--accent); }
 
 /* SECTIONS */
 .section { padding: 100px 2rem; }
 .section--ivory { background: var(--ivory); }
 .section--cream { background: var(--cream); }
-.section--gold  { background: var(--forest-pale); }
+.section--gold  { background: var(--pale); }
 .container { max-width: 940px; margin: 0 auto; }
 .container--narrow { max-width: 680px; margin: 0 auto; }
 
 .ornament {
   text-align: center;
   font-size: 2rem;
-  color: var(--forest-mid);
+  color: var(--accent-mid);
   margin-bottom: 1rem;
   display: block;
 }
@@ -197,13 +196,13 @@ a { color: inherit; }
   font-size: 1rem;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: var(--forest);
+  color: var(--accent);
   margin-bottom: 1.5rem;
 }
 .divider-gold {
   width: 60px;
   height: 1px;
-  background: var(--forest-mid);
+  background: var(--accent-mid);
   margin: 1.5rem auto;
 }
 .divider-gold--wide { width: 120px; }
@@ -228,7 +227,7 @@ a { color: inherit; }
 .story__sig {
   font-style: italic;
   font-size: 1.3rem;
-  color: var(--forest);
+  color: var(--accent);
   margin-top: .5rem;
 }
 
@@ -236,21 +235,21 @@ a { color: inherit; }
 .programme__schedule {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(40,66,58,.2);
+  border-top: 1px solid rgba(139,104,69,.22);
 }
 .programme__item {
   display: grid;
   grid-template-columns: 140px 1fr;
   gap: 2rem;
   padding: 2.25rem 0;
-  border-bottom: 1px solid rgba(40,66,58,.2);
+  border-bottom: 1px solid rgba(139,104,69,.22);
   align-items: start;
 }
 .programme__time {
   font-size: 1.05rem;
   font-weight: 500;
   letter-spacing: .08em;
-  color: var(--forest);
+  color: var(--accent);
   padding-top: .2rem;
   text-transform: uppercase;
 }
@@ -267,7 +266,7 @@ a { color: inherit; }
 }
 .programme__note {
   font-size: 1rem;
-  color: var(--forest-mid);
+  color: var(--accent);
   margin-top: .5rem;
   font-style: italic;
 }
@@ -281,7 +280,7 @@ a { color: inherit; }
 }
 .praktisk__card {
   background: var(--ivory);
-  border: 1px solid rgba(40,66,58,.18);
+  border: 1px solid rgba(139,104,69,.18);
   padding: 2.25rem 1.75rem;
   text-align: center;
   display: flex;
@@ -316,7 +315,7 @@ a { color: inherit; }
   margin: 0 auto 3rem;
   align-items: center;
   gap: .65rem;
-  color: var(--forest);
+  color: var(--accent);
   text-decoration: none;
   font-size: 1.25rem;
   font-style: italic;
@@ -330,9 +329,9 @@ a { color: inherit; }
   text-align: center;
   gap: .75rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(40,66,58,.18);
+  border-top: 1px solid rgba(139,104,69,.2);
 }
-.gifts__alt-icon { font-size: 1.8rem; color: var(--forest-mid); }
+.gifts__alt-icon { font-size: 1.8rem; color: var(--accent-mid); }
 .gifts__alt > p {
   font-size: 1.05rem;
   font-style: italic;
@@ -353,7 +352,7 @@ a { color: inherit; }
   color: var(--text-mid);
 }
 
-/* RSVP */
+/* RSVP / PÅMELDING */
 .rsvp__intro {
   text-align: center;
   font-style: italic;
@@ -368,7 +367,7 @@ a { color: inherit; }
   font-size: 1rem;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--forest);
+  color: var(--accent);
   margin-bottom: 2.75rem;
 }
 .form {
@@ -391,7 +390,7 @@ a { color: inherit; }
 .form-group textarea {
   width: 100%;
   padding: .95rem 1.1rem;
-  border: 1px solid rgba(40,66,58,.28);
+  border: 1px solid rgba(139,104,69,.28);
   background: var(--white);
   font-family: var(--font);
   font-size: 1.1rem;
@@ -403,21 +402,21 @@ a { color: inherit; }
 }
 .form-group input:focus,
 .form-group select:focus,
-.form-group textarea:focus { outline: none; border-color: var(--forest); }
+.form-group textarea:focus { outline: none; border-color: var(--accent); }
 .form-group textarea { min-height: 110px; resize: vertical; }
 .form-submit { text-align: center; margin-top: .5rem; }
 .demo-note {
   display: none;
   text-align: center;
   font-style: italic;
-  color: var(--forest);
+  color: var(--accent);
   font-size: 1rem;
   margin-top: 1rem;
 }
 
 /* FAQ */
 .faq__list { max-width: 680px; margin: 0 auto; }
-details { border-bottom: 1px solid rgba(40,66,58,.18); }
+details { border-bottom: 1px solid rgba(139,104,69,.2); }
 details summary {
   padding: 1.3rem 0;
   cursor: pointer;
@@ -436,11 +435,11 @@ details summary::after {
   flex-shrink: 0;
   font-size: 1.5rem;
   font-style: normal;
-  color: var(--forest);
+  color: var(--accent);
   transition: transform var(--transition);
 }
 details[open] summary::after { transform: rotate(45deg); }
-details[open] summary { color: var(--forest); }
+details[open] summary { color: var(--accent); }
 .faq__answer {
   padding-bottom: 1.5rem;
   font-size: 1.1rem;
@@ -449,14 +448,14 @@ details[open] summary { color: var(--forest); }
 }
 
 /* DESIGN PALETTE */
-.palette { background: #1E1208; color: rgba(255,255,255,.85); padding: 80px 2rem; }
+.palette { background: #1C1209; color: rgba(255,255,255,.85); padding: 80px 2rem; }
 .palette .container { max-width: 940px; margin: 0 auto; }
 .palette__label {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: .65rem;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: #C4875A;
+  color: var(--accent-mid);
   margin-bottom: .75rem;
   display: block;
 }
@@ -482,7 +481,7 @@ details[open] summary { color: var(--forest); }
   width: 36px; height: 36px;
   border-radius: 2px;
   flex-shrink: 0;
-  border: 1px solid rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.12);
 }
 .palette__swatch-info { display: flex; flex-direction: column; gap: .1rem; }
 .palette__swatch-hex {
@@ -524,12 +523,12 @@ details[open] summary { color: var(--forest); }
   gap: 1.5rem;
 }
 .palette__cta-text { font-size: 1.5rem; font-style: italic; color: var(--white); }
-.palette__cta-text span { color: #C4875A; }
+.palette__cta-text span { color: var(--accent-mid); }
 .palette__cta-link {
   display: inline-block;
   padding: .8rem 2rem;
-  border: 1px solid rgba(196,135,90,.5);
-  color: #C4875A;
+  border: 1px solid rgba(196,168,130,.45);
+  color: var(--accent-mid);
   text-decoration: none;
   font-size: .85rem;
   letter-spacing: .12em;
@@ -537,11 +536,11 @@ details[open] summary { color: var(--forest); }
   transition: all var(--transition);
   font-family: var(--font);
 }
-.palette__cta-link:hover { background: var(--forest); border-color: var(--forest); color: var(--ivory); }
+.palette__cta-link:hover { background: var(--accent); border-color: var(--accent); color: var(--ivory); }
 
 /* FOOTER */
 .footer {
-  background: #160C06;
+  background: #120B04;
   color: rgba(255,255,255,.42);
   text-align: center;
   padding: 3rem 1rem;
