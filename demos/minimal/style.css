@@ -277,10 +277,11 @@ a { color: inherit; }
   flex-direction: column;
   border-top: 1px solid var(--warm-grey);
 }
+.programme__num { display: none; }
 .programme__item {
   display: grid;
-  grid-template-columns: 80px 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
   padding: 2.25rem 0;
   border-bottom: 1px solid var(--warm-grey);
   align-items: start;
@@ -615,7 +616,6 @@ details[open] summary { color: var(--sand); }
   .palette { padding: 72px 1.25rem; }
   .form-row { grid-template-columns: 1fr; }
   .hero__names { font-size: clamp(3rem, 18vw, 5rem); }
-  .programme__item { grid-template-columns: 48px 1fr; gap: 1.25rem; }
-  .programme__num { font-size: 1.5rem; }
+  .programme__item { padding: 1.75rem 0; }
   .palette__cta { flex-direction: column; }
 }
