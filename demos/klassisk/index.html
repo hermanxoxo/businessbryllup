@@ -22,11 +22,14 @@
   <nav class="nav">
     <div class="nav__inner">
       <span class="nav__logo">Ingrid & Alexander</span>
-      <ul class="nav__links">
-        <li><a href="#program">Program</a></li>
-        <li><a href="#praktisk">Praktisk</a></li>
-        <li><a href="#gaver">Gaveønsker</a></li>
-        <li><a href="#rsvp">Påmelding</a></li>
+      <button class="nav__toggle" id="navToggle" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#program" class="nav__close-on-click">Program</a></li>
+        <li><a href="#praktisk" class="nav__close-on-click">Praktisk</a></li>
+        <li><a href="#gaver" class="nav__close-on-click">Gaveønsker</a></li>
+        <li><a href="#rsvp" class="nav__close-on-click">Påmelding</a></li>
       </ul>
     </div>
   </nav>
@@ -366,6 +369,23 @@
   </footer>
 
   <script>
+    // Mobile nav
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    document.querySelectorAll('.nav__close-on-click').forEach(a =>
+      a.addEventListener('click', () => {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', false);
+      })
+    );
+
+    // RSVP demo
     document.getElementById('rsvpForm').addEventListener('submit', e => {
       e.preventDefault();
       document.getElementById('demoNote').style.display = 'block';
