@@ -565,7 +565,7 @@ details[open] summary { color: var(--sand); }
   background: none;
   border: none;
   cursor: pointer;
-  padding: .4rem;
+  padding: .7rem;
   z-index: 101;
 }
 .nav__toggle span {
@@ -608,4 +608,5 @@ details[open] summary { color: var(--sand); }
   .programme__item { grid-template-columns: 40px 1fr; gap: 1.25rem; padding: 1.75rem 0; }
   .programme__icon { width: 36px; height: 36px; }
   .palette__cta { flex-direction: column; }
+  .demo-banner { font-size: .6rem; gap: .75rem; }
 }

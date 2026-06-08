@@ -589,7 +589,7 @@ details[open] summary { color: var(--rose); }
   background: none;
   border: none;
   cursor: pointer;
-  padding: .4rem;
+  padding: .7rem;
   z-index: 101;
 }
 .nav__toggle span {
@@ -630,5 +630,7 @@ details[open] summary { color: var(--rose); }
   .section { padding: 72px 1.5rem; }
   .form-row { grid-template-columns: 1fr; }
   .hero__content { padding: 3rem 1.5rem; }
+  .hero__title { font-size: clamp(2.2rem, 9vw, 3.5rem); }
   .palette__cta { flex-direction: column; }
+  .demo-banner { font-size: .6rem; gap: .75rem; }
 }
