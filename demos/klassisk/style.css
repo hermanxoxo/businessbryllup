@@ -696,6 +696,7 @@ details[open] summary { color: var(--accent-dark); }
   /* Layout */
   .section { padding: 90px 2rem; }
   .story__grid { grid-template-columns: 1fr; gap: 3rem; }
+  .story__img { aspect-ratio: 4/3; }
   .gifts__grid { grid-template-columns: 1fr; max-width: 420px; }
   .palette__grid { grid-template-columns: 1fr; gap: 3rem; }
 }
