@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ingrid og Herman gifter seg 7. august 2027 i Loshavn. Se program, overnatting og meld deg på." />
+  <meta name="description" content="Sofia og Magnus gifter seg 14. juni 2026 på Sørlandet. Se program, overnatting og meld deg på." />
   <meta name="theme-color" content="#3D2F1E" />
-  <title>Ingrid &amp; Herman gifter seg</title>
+  <title>Sofia &amp; Magnus gifter seg</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
@@ -29,6 +29,11 @@
       decoding="async"
     />
     <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__label">Vi gifter oss!</p>
+      <h1 class="hero__names">Sofia &amp; Magnus</h1>
+      <p class="hero__date">14. juni 2026 &nbsp;·&nbsp; Sørlandet</p>
+    </div>
     <a href="#program" class="hero__scroll" aria-label="Scroll til program">
       <span class="hero__scroll-icon">↓</span>
     </a>
@@ -38,20 +43,19 @@
   <section class="section program" id="program">
     <div class="container">
       <h2 class="section__title">Program</h2>
-      <p class="section__subtitle">7.–8. august 2027</p>
+      <p class="section__subtitle">13.–15. juni 2026</p>
 
       <p class="program__intro">
-        Vi planlegger å gifte oss i nydelige Farsund, og håper dere har mulighet til å tilbringe
+        Vi planlegger å gifte oss på nydelige Sørlandet, og håper dere har mulighet til å tilbringe
         bryllupshelgen sammen med oss. Vi legger opp til en helg fylt med hyggelige opplevelser,
         god mat og tid sammen med familie og venner.
       </p>
       <p class="program__intro">
-        Bryllupshelgen varer fra fredag til lørdag, og vi håper så mange som mulig har anledning
-        til å komme allerede torsdag 5. august for å få med seg hele opplegget og nyte sensommeren
-        i Farsund med oss.
+        Bryllupshelgen varer fra fredag til søndag, og vi håper så mange som mulig har anledning
+        til å komme allerede fredag for å få med seg hele opplegget og nyte forsommeren ved sjøen.
       </p>
       <p class="program__intro">
-        Vi har holdt av hotellrom for de som ønsker å bo på Rederiet Hotell i Farsund sentrum.
+        Vi har holdt av hotellrom for de som ønsker å bo på Havnehotellet i sentrum.
         Rom kan bookes med koden som ligger lenger nede på siden.
       </p>
 
@@ -61,16 +65,16 @@
         <button class="tab"             role="tab" aria-selected="false" aria-controls="sondag" data-day="sondag">Søndag</button>
       </div>
 
-      <!-- Fredag 6. august -->
+      <!-- Fredag 13. juni -->
       <div class="day-panel day-panel--active" id="fredag" role="tabpanel" tabindex="0">
-        <p class="day-panel__date">Fredag 6. august</p>
+        <p class="day-panel__date">Fredag 13. juni</p>
         <ul class="schedule">
           <li class="schedule__item">
             <span class="schedule__time">12:00 – 16:00</span>
             <div class="schedule__info">
               <strong><span class="schedule__icon">☀️</span>Bryggehygge!</strong>
-              <span>Sørlandsidyll på bryggen i Eikvåg. Vannsport organiseres for de som føler seg eventyrlystne, og for de som foretrekker soling og pils er det også lov.</span>
-              <span>Det serveres lett grillmat. Det er stort sett alltid sol i Farsund, men vi kommer tilbake med en plan B hvis værgudene ikke er på vår side.</span>
+              <span>Sørlandsidyll på bryggen ved sjøen. Vannsport organiseres for de som føler seg eventyrlystne, og for de som foretrekker soling og pils er det også lov.</span>
+              <span>Det serveres lett grillmat. Vi kommer tilbake med en plan B dersom værgudene ikke er på vår side.</span>
               <span class="schedule__note">Ta med badetøy og håndkle!</span>
             </div>
           </li>
@@ -78,7 +82,7 @@
             <span class="schedule__time">18:00 – 22:00</span>
             <div class="schedule__info">
               <strong><span class="schedule__icon">🍕</span>Pizza &amp; vin i solnedgangen</strong>
-              <span>Idylliske Lomsesanden</span>
+              <span>Idyllisk strandlokale ved sjøen</span>
               <span class="schedule__note">Dress code: litt pyntet, men ta med varme klær da vi planlegger å sitte ute! Kvelden avsluttes kl. 22 slik at alle er uthvilt til lørdagen.</span>
             </div>
           </li>
@@ -86,57 +90,57 @@
             <span class="schedule__time">Transport</span>
             <div class="schedule__info">
               <strong><span class="schedule__icon">🚌</span>Transport til og fra alle aktiviteter</strong>
-              <span>Vi organiserer transport fra Rederiet Hotell. Mer informasjon kommer nærmere.</span>
+              <span>Vi organiserer transport fra Havnehotellet. Mer informasjon kommer nærmere.</span>
             </div>
           </li>
         </ul>
       </div>
 
-      <!-- Lørdag 7. august -->
+      <!-- Lørdag 14. juni -->
       <div class="day-panel" id="lordag" role="tabpanel" tabindex="0">
-        <p class="day-panel__date">Lørdag 7. august · Bryllupsdagen</p>
+        <p class="day-panel__date">Lørdag 14. juni · Bryllupsdagen</p>
         <ul class="schedule">
           <li class="schedule__item">
             <span class="schedule__time">Kl. 13:00</span>
             <div class="schedule__info">
               <strong><span class="schedule__icon">🚌</span>Henting</strong>
-              <span>Oppmøte utenfor Torvet i Farsund sentrum (ca. 3 min å spasere fra Rederiet Hotell) for avreise til Loshavn.</span>
+              <span>Oppmøte utenfor Havnehotellet for avreise til vielsesstedet.</span>
             </div>
           </li>
           <li class="schedule__item">
             <span class="schedule__time">Kl. 14:00</span>
             <div class="schedule__info">
-              <strong><span class="schedule__icon">💍</span>Vielse av Ingrid &amp; Herman</strong>
-              <span>Loshavn bedehus · Etter vielsen går turen direkte videre til Eikvåg.</span>
+              <strong><span class="schedule__icon">💍</span>Vielse av Sofia &amp; Magnus</strong>
+              <span>Solvika kapell · Etter vielsen går turen direkte videre til festlokalet ved sjøen.</span>
             </div>
           </li>
           <li class="schedule__item">
             <span class="schedule__time">Kl. 15:30</span>
             <div class="schedule__info">
-              <strong><span class="schedule__icon">🎉</span>Middag &amp; fest i Eikvåg</strong>
-              <span>Middag, taler og feiring utover kvelden med musikk, dans og sommerstemning ved sjøen.</span>
+              <strong><span class="schedule__icon">🎉</span>Middag &amp; fest ved sjøen</strong>
+              <span>Middag, taler og feiring utover kvelden med musikk, dans og sommerstemning.</span>
               <span class="schedule__note">Dress code: Smoking / mørk dress</span>
-              <span class="schedule__note">Toastmastere: Christer Berge og Gaute Jonasson – ta kontakt med dem for å si noen ord.</span>
+              <span class="schedule__note">Toastmaster tar imot innlegg — kontakt dem for å si noen ord.</span>
             </div>
           </li>
           <li class="schedule__item">
             <span class="schedule__time">23:00 – 02:00</span>
             <div class="schedule__info">
-              <strong><span class="schedule__icon">🚌</span>Transport til Rederiet Hotell</strong>
-              <span>Avgang fra Eikvåg hver time mellom kl. 23:00 og 02:00.</span>
+              <strong><span class="schedule__icon">🚌</span>Transport til Havnehotellet</strong>
+              <span>Avgang fra festlokalet hver time mellom kl. 23:00 og 02:00.</span>
             </div>
           </li>
         </ul>
       </div>
 
-      <!-- Søndag 8. august -->
+      <!-- Søndag 15. juni -->
       <div class="day-panel" id="sondag" role="tabpanel" tabindex="0">
-        <p class="day-panel__date">Søndag 8. august</p>
+        <p class="day-panel__date">Søndag 15. juni</p>
         <ul class="schedule">
           <li class="schedule__item">
             <span class="schedule__time">09:00 – 12:00</span>
             <div class="schedule__info">
-              <strong><span class="schedule__icon">🥐</span>Brunchbuffet på Rederiet Hotell</strong>
+              <strong><span class="schedule__icon">🥐</span>Brunchbuffet på Havnehotellet</strong>
               <span>Alle er velkomne – også de som ikke bor på hotellet.</span>
               <span class="schedule__note">Søndag blir en ny dag da.</span>
             </div>
@@ -159,13 +163,13 @@
         />
       </div>
       <div class="couple__text">
-        <h2 class="section__title section__title--left">Ingrid &amp; Herman</h2>
+        <h2 class="section__title section__title--left">Sofia &amp; Magnus</h2>
         <p>
           Vi er så glade for å feire denne helgen med dere – familie og venner
           som betyr aller mest for oss. Gleder oss til å se alle i det vakre
-          Loshavn i sommer!
+          Sørlandet til sommeren!
         </p>
-        <p class="couple__sig">Med all hilsen, Ingrid &amp; Herman</p>
+        <p class="couple__sig">Med all hilsen, Sofia &amp; Magnus</p>
       </div>
     </div>
   </section>
@@ -174,17 +178,14 @@
   <section class="section hotel" id="hotell">
     <div class="container">
       <h2 class="section__title">Overnatting</h2>
-      <div class="hotel__logo-wrap">
-        <img src="images/Logo_rederiet.png" alt="Rederiet Hotell" class="hotel__logo" loading="lazy" decoding="async" />
-      </div>
       <div class="hotel__card">
         <div class="hotel__text">
           <p>
-            Rederiet Hotell er avholdt for booking av hotellrom til bryllupshelgen.
-            Hotellet ligger i hjertet av Farsund sentrum, med enkel tilgang til alle aktiviteter.
+            Havnehotellet er avholdt for booking av hotellrom til bryllupshelgen.
+            Hotellet ligger sentralt med enkel tilgang til alle aktiviteter og transport.
           </p>
           <p>
-            Bruk kode <strong>XXX</strong> for å booke rom til avtalt gruppepris.
+            Bruk kode <strong>SOFmagnus26</strong> for å booke rom til avtalt gruppepris.
           </p>
         </div>
       </div>
@@ -194,54 +195,54 @@
   <!-- ======= TING Å GJØRE ======= -->
   <section class="section aktiviteter" id="aktiviteter">
     <div class="container">
-      <h2 class="section__title">Ting å gjøre i Farsund</h2>
+      <h2 class="section__title">Ting å gjøre i området</h2>
       <p class="section__subtitle">For de som vil oppleve litt mer</p>
       <p class="aktiviteter__intro">
-        For de som ønsker å oppleve mer av Farsund og områdene rundt, har vi samlet noen forslag
+        For de som ønsker å oppleve mer av Sørlandet og området rundt, har vi samlet noen forslag
         til aktiviteter og opplevelser gjennom helgen.
       </p>
       <div class="aktiviteter__grid">
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🎯</div>
-          <h3>Camp Farsund</h3>
-          <p>Innendørs aktiviteter som squash, padel, minigolf, buldrevegg og golfsimulator – perfekt dersom været ikke spiller på lag.</p>
+          <h3>Innendørsaktiviteter</h3>
+          <p>Squash, padel, minigolf og klatrevegg – perfekt dersom været ikke spiller på lag.</p>
         </div>
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🏖️</div>
-          <h3>Nordhasselvika</h3>
-          <p>Farsund er kjent for sine vakre strender, og Nordhasselvika ble nylig kåret av The Guardian til en av Europas beste skjulte strender.</p>
+          <h3>Sandstranda</h3>
+          <p>Sørlandet er kjent for sine vakre strender. Bare noen minutter unna finner du en av regionens fineste badeplasser.</p>
         </div>
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🪨</div>
-          <h3>Helleristningene på Penne</h3>
-          <p>På Lista kan man besøke de fascinerende helleristningene på Penne – et av Norges mest kjente helleristningsfelt.</p>
+          <h3>Historiske severdigheter</h3>
+          <p>Området byr på fascinerende historiske kulturminner og friluftsmuseum — flott for en rolig formiddag.</p>
         </div>
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🥞</div>
-          <h3>Det Amerikanske Lista</h3>
-          <p>Ta turen til Vanse og opplev «Det Amerikanske Lista» – med blant annet Brooklyn Bridge og amerikanske pannekaker hos Larsens Bakery.</p>
+          <h3>Lokale kaféer</h3>
+          <p>Ta en tur i sentrum og opplev lokale kaféer og butikker. Perfekt for en avslappet formiddag før festen.</p>
         </div>
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🎣</div>
           <h3>Fisketur</h3>
-          <p>Mulighet for fisketur med båtutleie fra Farsund Resort – en flott måte å oppleve skjærgården på.</p>
+          <p>Mulighet for fisketur med båtutleie fra bryggen – en flott måte å oppleve skjærgården på.</p>
         </div>
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🍽️</div>
-          <h3>Middag på Under</h3>
-          <p>En unik matopplevelse omtrent 45 minutter fra Farsund – verdens første undervannsrestaurant.</p>
+          <h3>Sjømatrestaurant</h3>
+          <p>En unik matopplevelse i nærheten – nydelig sjømat rett fra havet i vakre omgivelser.</p>
         </div>
 
         <div class="aktivitet-kort">
           <div class="aktivitet-kort__ikon">🌅</div>
-          <h3>Varnes Fyr</h3>
-          <p>Avslutt dagen med å se solnedgangen fra det vakre Varnes Fyr ytterst på Lista.</p>
+          <h3>Fyret</h3>
+          <p>Avslutt dagen med å se solnedgangen fra det vakre gamle fyret ytterst på odden.</p>
         </div>
 
       </div>
@@ -257,7 +258,7 @@
           Vi vil så gjerne vite om du kommer! Bekreft din deltakelse ved å fylle ut
           påmeldingsskjemaet. Her oppgir du også eventuelle allergier og om du tar med følge.
         </p>
-        <p class="rsvp-teaser__deadline">Svarfrist: <strong>1. januar 2027</strong></p>
+        <p class="rsvp-teaser__deadline">Svarfrist: <strong>1. april 2026</strong></p>
       </div>
       <a href="paamelding.html" class="btn-rsvp">Meld deg på</a>
     </div>
@@ -272,17 +273,17 @@
 
         <div class="glede__kort">
           <p class="glede__navn">Karin &amp; Trond Bergstad</p>
-          <p class="glede__hilsen">«Gratulerer så mye! Vi gleder oss enormt til å feire med dere i Loshavn. Dette blir en dag vi sent vil glemme!»</p>
+          <p class="glede__hilsen">«Gratulerer så mye! Vi gleder oss enormt til å feire med dere. Dette blir en dag vi sent vil glemme!»</p>
         </div>
 
         <div class="glede__kort">
           <p class="glede__navn">Marte Haugen</p>
-          <p class="glede__hilsen">«Så fint at dere endelig gifter dere! Gleder oss til en herlig bryllupshelg i Farsund. Mange klemmer til dere begge!»</p>
+          <p class="glede__hilsen">«Så fint at dere endelig gifter dere! Gleder oss til en herlig bryllupshelg ved sjøen. Mange klemmer til dere begge!»</p>
         </div>
 
         <div class="glede__kort">
           <p class="glede__navn">Ole-Martin &amp; Silje Dahl</p>
-          <p class="glede__hilsen">«Vi teller ned dagene! Det blir nydelig i Loshavn, og vi kan ikke vente med å feire denne spesielle dagen sammen med dere.»</p>
+          <p class="glede__hilsen">«Vi teller ned dagene! Det blir nydelig, og vi kan ikke vente med å feire denne spesielle dagen sammen med dere.»</p>
         </div>
 
         <div class="glede__kort">
@@ -292,7 +293,7 @@
 
         <div class="glede__kort">
           <p class="glede__navn">Andreas &amp; Nina Solberg</p>
-          <p class="glede__hilsen">«Vi gleder oss til bryllupet deres! Farsund om sommeren med gode venner – dette blir helt perfekt.»</p>
+          <p class="glede__hilsen">«Vi gleder oss til bryllupet deres! Sommer ved sjøen med gode venner – dette blir helt perfekt.»</p>
         </div>
 
         <div class="glede__kort">
@@ -307,7 +308,7 @@
 
   <!-- ======= FOOTER ======= -->
   <footer class="footer">
-    <p>Ingrid &amp; Herman · 7. august 2027 · Loshavn</p>
+    <p>Sofia &amp; Magnus · 14. juni 2026 · Sørlandet</p>
     <p class="footer__small">Med glede &amp; kjærlighet</p>
   </footer>
 
