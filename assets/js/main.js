@@ -70,26 +70,35 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn      = document.getElementById('submitBtn');
-    const success  = document.getElementById('formSuccess');
-    const error    = document.getElementById('formError');
-    const data     = Object.fromEntries(new FormData(contactForm));
+    const btn     = document.getElementById('submitBtn');
+    const success = document.getElementById('formSuccess');
+    const error   = document.getElementById('formError');
+    const data    = Object.fromEntries(new FormData(contactForm));
 
-    btn.disabled   = true;
+    btn.disabled    = true;
     btn.textContent = 'Sender…';
     success.style.display = 'none';
     error.style.display   = 'none';
 
     try {
-      if (typeof CONFIG !== 'undefined' && CONFIG.SHEETS_WEBHOOK_URL) {
-        const res = await fetch(CONFIG.SHEETS_WEBHOOK_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ ...data, timestamp: new Date().toISOString() }),
+      if (typeof CONFIG !== 'undefined' && CONFIG.WEB3FORMS_KEY) {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method:  'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: CONFIG.WEB3FORMS_KEY,
+            subject:    `Ny henvendelse fra bryllupsverdi.no — ${data.navn || ''}`,
+            from_name:  data.navn  || 'Ukjent',
+            email:      data.epost || '',
+            message:    `Navn: ${data.navn || '–'}\nE-post: ${data.epost || '–'}\nDato: ${data.dato || '–'}\nPakke: ${data.pakke || '–'}\nMelding: ${data.melding || '–'}`,
+          }),
         });
-        if (!res.ok) throw new Error('Network response was not ok');
+        const json = await res.json();
+        if (!json.success) throw new Error(json.message);
+      } else {
+        // Web3Forms-nøkkel ikke satt — logg lokalt, vis suksess
+        console.warn('WEB3FORMS_KEY ikke satt i config.js', data);
       }
-      // Vis suksessmelding uansett (webhook ikke satt opp ennå er ok i dev)
       success.style.display = 'block';
       contactForm.reset();
     } catch {
