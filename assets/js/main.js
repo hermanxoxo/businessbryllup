@@ -16,6 +16,7 @@ if (toggle && menu) {
     const open = toggle.getAttribute('aria-expanded') === 'true';
     toggle.setAttribute('aria-expanded', String(!open));
     menu.classList.toggle('open', !open);
+    header.classList.toggle('menu-open', !open);
     document.body.style.overflow = open ? '' : 'hidden';
   });
 
@@ -24,6 +25,7 @@ if (toggle && menu) {
     link.addEventListener('click', () => {
       toggle.setAttribute('aria-expanded', 'false');
       menu.classList.remove('open');
+      header.classList.remove('menu-open');
       document.body.style.overflow = '';
     });
   });

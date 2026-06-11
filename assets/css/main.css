@@ -209,6 +209,14 @@ h4, h5, h6 {
   box-shadow: 0 1px 0 rgba(45,59,53,.08);
 }
 
+.site-header.menu-open {
+  background: rgba(250, 247, 242, .98);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.site-header.menu-open .nav__logo-text { color: var(--text); }
+.site-header.menu-open .nav__toggle span { background: var(--text); }
+
 /* Nav over hero: hvit tekst på transparent bakgrunn */
 .site-header:not(.scrolled) .nav__logo-text { color: var(--white); }
 .site-header:not(.scrolled) .nav__link { color: rgba(255,255,255,.82); }
