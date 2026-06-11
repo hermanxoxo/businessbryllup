@@ -8,7 +8,7 @@ const CONFIG = {
   BASE_URL:          'https://bryllupsverdi.no',
 
   // Web3Forms access key — hent gratis på https://web3forms.com (skriv inn kontakt@bryllupsverdi.no)
-  WEB3FORMS_KEY:     null,
+  WEB3FORMS_KEY:     'bff14fab-0c9b-4fe1-9f2e-600bdf7ec1dc',
 
   // Sett til Calendly-URL når konto er opprettet — Calendly-knapp vises automatisk
   BOOKING_URL:       null,
