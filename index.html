@@ -51,17 +51,17 @@
               aria-label="Åpne navigasjonsmeny">
         <span></span><span></span><span></span>
       </button>
-
-      <ul class="nav__menu" id="navMenu" role="list">
-        <li><a href="#maler"   class="nav__link">Maler</a></li>
-        <li><a href="#pakker"  class="nav__link">Pakker</a></li>
-        <li><a href="#prosess" class="nav__link">Prosess</a></li>
-        <li><a href="#om"      class="nav__link">Om Bryllupsverdi</a></li>
-        <li><a href="#kontakt" class="nav__link nav__link--cta">Kom i gang</a></li>
-      </ul>
-
     </nav>
   </header>
+
+  <!-- Mobilmeny — utenfor header for å unngå iOS backdrop-filter stacking bug -->
+  <ul class="nav__menu" id="navMenu" role="list" aria-label="Navigasjonsmeny">
+    <li><a href="#maler"   class="nav__link nav__close-on-click">Maler</a></li>
+    <li><a href="#pakker"  class="nav__link nav__close-on-click">Pakker</a></li>
+    <li><a href="#prosess" class="nav__link nav__close-on-click">Prosess</a></li>
+    <li><a href="#om"      class="nav__link nav__close-on-click">Om Bryllupsverdi</a></li>
+    <li><a href="#kontakt" class="nav__link nav__link--cta nav__close-on-click">Kom i gang</a></li>
+  </ul>
 
   <main id="main-content">
 

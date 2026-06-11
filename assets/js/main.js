@@ -21,7 +21,7 @@ if (toggle && menu) {
   });
 
   // Lukk meny ved klikk på lenke
-  menu.querySelectorAll('a').forEach(link => {
+  menu.querySelectorAll('.nav__close-on-click').forEach(link => {
     link.addEventListener('click', () => {
       toggle.setAttribute('aria-expanded', 'false');
       menu.classList.remove('open');

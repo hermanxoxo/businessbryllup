@@ -210,16 +210,16 @@ h4, h5, h6 {
 }
 
 .site-header.menu-open {
-  background: rgba(250, 247, 242, .98);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: #FAF7F2;
 }
-.site-header.menu-open .nav__logo-text           { color: var(--text); }
-.site-header.menu-open .nav__toggle span         { background: var(--text); }
-.site-header.menu-open .nav__link                { color: var(--text); }
-.site-header.menu-open .nav__link:hover          { color: var(--burgundy); }
-.site-header.menu-open .nav__link--cta           { color: var(--white); background: var(--burgundy); border-color: var(--burgundy); }
-.site-header.menu-open .nav__link--cta:hover     { background: var(--burgundy-dark); border-color: var(--burgundy-dark); }
+.site-header.menu-open .nav__logo-text   { color: var(--text); }
+.site-header.menu-open .nav__toggle span { background: var(--text); }
+
+/* Mobilmeny — ligger utenfor header, styres direkte */
+.nav__menu.open .nav__link                { color: var(--text); }
+.nav__menu.open .nav__link:hover          { color: var(--burgundy); background: var(--beige); }
+.nav__menu.open .nav__link--cta           { color: var(--white); background: var(--burgundy); border-color: var(--burgundy); }
+.nav__menu.open .nav__link--cta:hover     { background: var(--burgundy-dark); border-color: var(--burgundy-dark); }
 
 /* Nav over hero: hvit tekst på transparent bakgrunn */
 .site-header:not(.scrolled) .nav__logo-text { color: var(--white); }
@@ -561,13 +561,17 @@ h4, h5, h6 {
   .nav__menu {
     display: none;
     position: fixed;
-    inset: var(--nav-h) 0 0;
-    background: var(--cream);
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FAF7F2;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    z-index: 99;
+    z-index: 9999;
+    list-style: none;
   }
 
   .nav__menu.open { display: flex; }
