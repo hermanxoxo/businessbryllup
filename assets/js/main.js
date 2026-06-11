@@ -12,22 +12,42 @@ if (header) {
 const toggle = document.getElementById('navToggle');
 const menu   = document.getElementById('navMenu');
 if (toggle && menu) {
+  let savedScrollY = 0;
+
+  function openMenu() {
+    savedScrollY = window.scrollY;
+    // iOS Safari krever position:fixed på body for å stoppe scroll bak menyen
+    document.body.style.position = 'fixed';
+    document.body.style.top      = `-${savedScrollY}px`;
+    document.body.style.width    = '100%';
+    toggle.setAttribute('aria-expanded', 'true');
+    menu.classList.add('open');
+    header.classList.add('menu-open');
+  }
+
+  function closeMenu() {
+    document.body.style.position = '';
+    document.body.style.top      = '';
+    document.body.style.width    = '';
+    window.scrollTo(0, savedScrollY);
+    toggle.setAttribute('aria-expanded', 'false');
+    menu.classList.remove('open');
+    header.classList.remove('menu-open');
+  }
+
   toggle.addEventListener('click', () => {
-    const open = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!open));
-    menu.classList.toggle('open', !open);
-    header.classList.toggle('menu-open', !open);
-    document.body.style.overflow = open ? '' : 'hidden';
+    if (toggle.getAttribute('aria-expanded') === 'true') closeMenu();
+    else openMenu();
   });
 
-  // Lukk meny ved klikk på lenke
-  menu.querySelectorAll('.nav__close-on-click').forEach(link => {
-    link.addEventListener('click', () => {
-      toggle.setAttribute('aria-expanded', 'false');
-      menu.classList.remove('open');
-      header.classList.remove('menu-open');
-      document.body.style.overflow = '';
-    });
+  // Lukk meny ved klikk på alle nav-lenker
+  menu.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Lukk meny ved Escape-tasten
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') closeMenu();
   });
 }
 

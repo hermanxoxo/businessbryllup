@@ -211,15 +211,12 @@ h4, h5, h6 {
 
 .site-header.menu-open {
   background: #FAF7F2;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
 }
 .site-header.menu-open .nav__logo-text   { color: var(--text); }
 .site-header.menu-open .nav__toggle span { background: var(--text); }
-
-/* Mobilmeny — ligger utenfor header, styres direkte */
-.nav__menu.open .nav__link                { color: var(--text); }
-.nav__menu.open .nav__link:hover          { color: var(--burgundy); background: var(--beige); }
-.nav__menu.open .nav__link--cta           { color: var(--white); background: var(--burgundy); border-color: var(--burgundy); }
-.nav__menu.open .nav__link--cta:hover     { background: var(--burgundy-dark); border-color: var(--burgundy-dark); }
 
 /* Nav over hero: hvit tekst på transparent bakgrunn */
 .site-header:not(.scrolled) .nav__logo-text { color: var(--white); }
@@ -561,39 +558,68 @@ h4, h5, h6 {
   .nav__menu {
     display: none;
     position: fixed;
-    top: var(--nav-h);
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    height: 100dvh;
     background: #FAF7F2;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: 0;
     z-index: 9999;
     list-style: none;
+    padding-top: calc(var(--nav-h) + env(safe-area-inset-top, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav__menu.open { display: flex; }
 
-  .nav__link {
-    font-size: 1.25rem;
+  /* Størrelser for menylenker på mobil */
+  .nav__menu .nav__link {
+    font-size: 1.3rem;
     font-weight: 500;
-    color: var(--text);
-    padding: .85rem 2rem;
-    min-width: 200px;
+    padding: .9rem 2rem;
+    min-width: 220px;
+    max-width: 280px;
+    width: 100%;
     text-align: center;
     border-radius: var(--radius);
+    display: block;
   }
 
-  .nav__link:hover { background: var(--beige); }
-
-  .nav__link--cta {
+  .nav__menu .nav__link--cta {
     margin-left: 0;
-    margin-top: .5rem;
-    padding: .85rem 2.5rem;
-    font-size: 1.1rem;
-    min-width: 200px;
+    margin-top: 1.25rem;
+    padding: .9rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  /* Farger — disse reglene kommer ETTER :not(.scrolled)-reglene globalt,
+     og vinner dermed ved lik spesifisitet */
+  .site-header.menu-open .nav__link {
+    color: #2D3B35;
+  }
+  .site-header.menu-open .nav__link:hover,
+  .site-header.menu-open .nav__link:active {
+    color: #6B2D3E;
+    background: #EDE6D9;
+  }
+  .site-header.menu-open .nav__link--cta {
+    color: #ffffff;
+    background: #6B2D3E;
+    border-color: #6B2D3E;
+  }
+  .site-header.menu-open .nav__link--cta:hover,
+  .site-header.menu-open .nav__link--cta:active {
+    background: #541F2F;
+    border-color: #541F2F;
+    color: #ffffff;
   }
 
   /* Hero */
